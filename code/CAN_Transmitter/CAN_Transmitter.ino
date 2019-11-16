@@ -3,8 +3,8 @@
 MCP_CAN myCan(10);     // Set CS to pin 10
 
 // ============== ADD AND EDIT CAN MESSAGE PARAMETERS ACCORDING TO FORMAT BELOW ======================
-// ============== byte your data name[8] = {your data}; ==============================================
-// ============== CAN_message_cyclic CCVS1([ADDRESS], [DLC], your data name, [PERIOD ms]); ===========
+// byte your_data_name[8] = {your_data};
+// CAN_message_cyclic CCVS1(your_address, your_dlc, your_data_name, your_period);
 
 byte CCVS1_data[8] = {0x37, 0x00, 0x00, 0xCF, 0x3F, 0xFF, 0xFF, 0xFF};
 CAN_message_cyclic CCVS1(0x18FEF100, 8, CCVS1_data, 100);
