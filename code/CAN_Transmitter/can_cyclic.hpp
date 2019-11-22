@@ -43,12 +43,12 @@ class CAN_message_cyclic
       if (millis() > millis_next)
       {
         // send data:  ID = 0x100, Standard CAN Frame, Data length = 8 bytes, 'data' = array of data bytes to send
+        byte sndStat = 0;
+        
         if (digitalRead(pin_250KBPS) == HIGH)
-          byte sndStat = myCan_250KBPS.sendMsgBuf(id, CAN_ID_29_BIT, dlc, data);
-        else if (digitalRead(pin_500KBPS) == HIGH)
-          byte sndStat = myCan_500KBPS.sendMsgBuf(id, CAN_ID_29_BIT, dlc, data);
-        else
-          Serial.print("ERROR, MODE SELECT SWITCH FAILURE\n");
+          sndStat = myCan_250KBPS.sendMsgBuf(id, CAN_ID_29_BIT, dlc, data);
+        else (digitalRead(pin_500KBPS) == HIGH)
+          sndStat = myCan_500KBPS.sendMsgBuf(id, CAN_ID_29_BIT, dlc, data);
         
         if(sndStat == CAN_OK)
         {
