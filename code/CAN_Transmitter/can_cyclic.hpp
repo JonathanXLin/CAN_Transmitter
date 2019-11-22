@@ -35,12 +35,15 @@ class CAN_message_cyclic
       led_flag = false;
     }
 
-    void send_CAN(MCP_CAN myCan)
+    void send_CAN(MCP_CAN myCan_250KBPS, MCP_CAN myCan_500KBPS)
     {
       if (millis() > millis_next)
       {
         // send data:  ID = 0x100, Standard CAN Frame, Data length = 8 bytes, 'data' = array of data bytes to send
-        byte sndStat = myCan.sendMsgBuf(id, CAN_ID_29_BIT, dlc, data);
+        if (digitalRead(pin_250KBPS) == HIGH)
+          byte sndStat = myCan_250KBPS.sendMsgBuf(id, CAN_ID_29_BIT, dlc, data);
+        else
+          byte sndStat = myCan_500KBPS.sendMsgBuf(id, CAN_ID_29_BIT, dlc, data);
         
         if(sndStat == CAN_OK)
         {
@@ -76,4 +79,4 @@ class CAN_message_cyclic
     }
 };
 
-void CAN_initialize(MCP_CAN myCan);
+void CAN_initialize(MCP_CAN myCan_250KBPS, MCP_CAN myCan_500KBPS);
