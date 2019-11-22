@@ -5,6 +5,9 @@
 #define led_pwr   5
 #define led_tx    6
 
+#define pin_250KBPS   8
+#define pin_500KBPS   9
+
 enum CAN_id_length {CAN_ID_11_BIT, CAN_ID_29_BIT};
 
 class CAN_message_cyclic
