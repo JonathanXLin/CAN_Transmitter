@@ -5,8 +5,7 @@
 #define led_pwr   5
 #define led_tx    6
 
-#define pin_250KBPS   8
-#define pin_500KBPS   9
+#define pin_baud_select   8
 
 enum CAN_id_length {CAN_ID_11_BIT, CAN_ID_29_BIT};
 
@@ -45,9 +44,9 @@ class CAN_message_cyclic
         // send data:  ID = 0x100, Standard CAN Frame, Data length = 8 bytes, 'data' = array of data bytes to send
         byte sndStat = 0;
         
-        if (digitalRead(pin_250KBPS) == HIGH)
+        if (digitalRead(pin_baud_select) == HIGH)
           sndStat = myCan_250KBPS.sendMsgBuf(id, CAN_ID_29_BIT, dlc, data);
-        else (digitalRead(pin_500KBPS) == HIGH)
+        else
           sndStat = myCan_500KBPS.sendMsgBuf(id, CAN_ID_29_BIT, dlc, data);
         
         if(sndStat == CAN_OK)

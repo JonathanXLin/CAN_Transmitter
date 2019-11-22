@@ -4,6 +4,7 @@ void CAN_initialize(MCP_CAN myCan_250KBPS, MCP_CAN myCan_500KBPS)
 {
   pinMode(led_pwr, OUTPUT);
   pinMode(led_tx, OUTPUT);
+  pinMode(pin_baud_select, INPUT);
 
   digitalWrite(led_pwr, LOW);
   digitalWrite(led_tx, LOW);
