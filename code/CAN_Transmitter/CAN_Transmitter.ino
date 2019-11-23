@@ -1,6 +1,7 @@
 #include "can_cyclic.hpp"
 
-MCP_CAN myCan(10);     // Set CS to pin 10
+MCP_CAN myCan_250KBPS(10);     // Set CS to pin 10
+MCP_CAN myCan_500KBPS(10);     // Set CS to pin 10
 
 // ============== ADD AND EDIT CAN MESSAGE PARAMETERS ACCORDING TO FORMAT BELOW ======================
 // byte your_data_name[8] = {your_data};
@@ -17,12 +18,12 @@ CAN_message_cyclic EBC2(0x18FEBF0B, 8, EBC2_data, 100);
 void setup()
 {
   // Initializes CAN and LEDs
-  CAN_initialize(myCan);
+  CAN_initialize(myCan_250KBPS, myCan_500KBPS);
 }
 
 void loop()
 {
   // One line for each CAN message
-  CCVS1.send_CAN(myCan);
-  EBC2.send_CAN(myCan);
+  CCVS1.send_CAN(myCan_250KBPS, myCan_500KBPS);
+  EBC2.send_CAN(myCan_250KBPS, myCan_500KBPS);
 }

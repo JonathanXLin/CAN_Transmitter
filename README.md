@@ -1,2 +1,13 @@
 # CAN_Transmitter
-Super simple CAN transmitter for simulating vehicle network. Used for environmental testing of new automotive products.
+Please read the User Guide for more information.
+
+This CAN transmitter sends cyclic CAN messages for automotive products undergoing long-term testing. This is intended to be easy to create, easy to program, and easy to configure. The following are user configurable:
+<br><br>•	Baud rate
+<br>•	CAN ID type (11/29 bit)
+<br>•	Number of CAN messages
+  <br>&nbsp;&nbsp;&nbsp;o	CAN message IDs
+  <br>&nbsp;&nbsp;&nbsp;o	CAN message DLCs
+  <br>&nbsp;&nbsp;&nbsp;o	CAN message data
+  <br>&nbsp;&nbsp;&nbsp;o	CAN message period
+<br><br>This project is and requires software licensed under the MIT License, which permits commercial use, modification, and distribution. Additional details are provided in the user guide.
+
