@@ -9,5 +9,10 @@ This CAN transmitter sends cyclic CAN messages for automotive products undergoin
   <br>&nbsp;&nbsp;&nbsp;o	CAN message DLCs
   <br>&nbsp;&nbsp;&nbsp;o	CAN message data
   <br>&nbsp;&nbsp;&nbsp;o	CAN message period
+  
+<br><br>Planned updates:
+<br><br>•	Protective off-the-shelf enclosure
+<br>•	New Seeeduino CAN shield with data logging (Micro SD)
+
 <br><br>This project is and requires software licensed under the MIT License, which permits commercial use, modification, and distribution. Additional details are provided in the user guide.
 
