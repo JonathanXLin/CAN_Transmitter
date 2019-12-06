@@ -17,8 +17,6 @@ void setup()
 {
   // Initializes CAN and LEDs
   CAN_initialize(myCan);
-
-  pinMode(13, OUTPUT);
 }
 
 void loop()
@@ -26,9 +24,4 @@ void loop()
   // One line for each CAN message
   CCVS1.send_CAN(myCan);
   EBC2.send_CAN(myCan);
-
-  digitalWrite(13, HIGH);
-  delay(300);
-  digitalWrite(13, LOW);
-  delay(300);
 }
