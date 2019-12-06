@@ -1,4 +1,4 @@
-# CAN_Transmitter rev0
+# CAN_Transmitter
 Please read the User Guide for more information.
 
 This CAN transmitter sends cyclic CAN messages for automotive products undergoing long duration testing. This is intended to be easy to create, program, and configure. The following are user configurable:
