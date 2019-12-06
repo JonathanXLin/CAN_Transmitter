@@ -1,0 +1,16 @@
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\bin\Debug\CAN Opener.exe.config
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\bin\Debug\CAN Opener.exe
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\bin\Debug\CAN Opener.pdb
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\CAN Opener.csprojResolveAssemblyReference.cache
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\CAN Opener_MarkupCompile.cache
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\CAN Opener_MarkupCompile.lref
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\CAN Opener.g.resources
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\CAN_Opener.Properties.Resources.resources
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\CAN Opener.csproj.GenerateResource.cache
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\CAN Opener.csproj.CoreCompileInputs.cache
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\CAN Opener.exe
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\CAN Opener.pdb
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\Views\App.g.cs
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\Views\App.baml
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\Views\MainWindow.baml

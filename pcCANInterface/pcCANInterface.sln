@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pcCANInterface", "pcCANInterface\pcCANInterface.csproj", "{4D838A37-F5C5-4845-8D8C-7CC9E6189B4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D838A37-F5C5-4845-8D8C-7CC9E6189B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D838A37-F5C5-4845-8D8C-7CC9E6189B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D838A37-F5C5-4845-8D8C-7CC9E6189B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D838A37-F5C5-4845-8D8C-7CC9E6189B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B756D62-2B31-4EEC-8A04-11F5C5325AC1}
+	EndGlobalSection
+EndGlobal

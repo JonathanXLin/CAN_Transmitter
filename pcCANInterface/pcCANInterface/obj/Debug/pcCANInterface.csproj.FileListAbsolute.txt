@@ -1,0 +1,32 @@
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\bin\Debug\pcCANInterface.exe.config
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\bin\Debug\pcCANInterface.exe
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\bin\Debug\pcCANInterface.pdb
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\pcCANInterface.csprojResolveAssemblyReference.cache
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\Views\App.g.cs
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\pcCANInterface_MarkupCompile.cache
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\pcCANInterface_MarkupCompile.lref
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\Views\App.baml
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\Views\MainWindow.baml
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\pcCANInterface.g.resources
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\pcCANInterface.Properties.Resources.resources
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\pcCANInterface.csproj.GenerateResource.cache
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\pcCANInterface.csproj.CoreCompileInputs.cache
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\pcCANInterface.exe
+C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\pcCANInterface.pdb
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\bin\Debug\pcCANInterface.exe.config
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\bin\Debug\pcCANInterface.exe
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\bin\Debug\pcCANInterface.pdb
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\pcCANInterface.csprojAssemblyReference.cache
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\Views\App.g.cs
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\pcCANInterface_MarkupCompile.cache
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\pcCANInterface_MarkupCompile.lref
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\Views\App.baml
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\Views\MainWindow.baml
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\pcCANInterface.g.resources
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\pcCANInterface.Properties.Resources.resources
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\pcCANInterface.csproj.GenerateResource.cache
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\pcCANInterface.csproj.CoreCompileInputs.cache
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\pcCANInterface.exe
+C:\Users\Tom\source\repos\pcCANInterface\pcCANInterface\obj\Debug\pcCANInterface.pdb
