@@ -1,8 +1,9 @@
 #include "mcp_can.h"
 #include <SPI.h>
 #include <SD.h>
+#include <String.h>
 
-#define led_pwr   5
+#define led_pwr   7
 #define led_tx    6
 
 #define pin_baud_select   8
@@ -33,6 +34,8 @@ class CAN_message_cyclic
 };
 
 void CAN_initialize();
+
+void SD_initialize();
 
 void print_can_receive();
 

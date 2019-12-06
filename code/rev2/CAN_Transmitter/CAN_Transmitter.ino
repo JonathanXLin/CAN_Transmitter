@@ -14,6 +14,7 @@ CAN_message_cyclic EBC2(0x18FEBF0B, 8, EBC2_data, 100);
 void setup(){
   // Initializes CAN and LEDs
   CAN_initialize();
+  SD_initialize();
 }
 
 void loop(){

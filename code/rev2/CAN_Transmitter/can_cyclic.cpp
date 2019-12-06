@@ -7,27 +7,29 @@ unsigned char len = 0;
 unsigned char buf[8];
 char str[20];
 
-void CAN_initialize(){
+unsigned long message_count = 0; // Message number sent/received
+
+void CAN_initialize() {
   pinMode(led_pwr, OUTPUT);
   pinMode(led_tx, OUTPUT);
   pinMode(pin_baud_select, INPUT);
 
   digitalWrite(led_pwr, LOW);
   digitalWrite(led_tx, LOW);
-  
+
   Serial.begin(9600);
 
   if (digitalRead(pin_baud_select))
   {
     // Initialize MCP2515 running at 16MHz with a baudrate of 250kb/s and the masks and filters disabled.
-    if(myCan.begin(CAN_250KBPS) == CAN_OK) 
+    if (myCan.begin(CAN_250KBPS) == CAN_OK)
       Serial.println("MCP2515 250KBPS Initialized Successfully!");
-    else 
+    else
     {
       while (1)
       {
         Serial.println("Error Initializing MCP2515 250KBPS...");
-        
+
         digitalWrite(led_pwr, HIGH);
         delay(300);
         digitalWrite(led_pwr, LOW);
@@ -38,14 +40,14 @@ void CAN_initialize(){
   else
   {
     // Initialize MCP2515 running at 16MHz with a baudrate of 500kb/s and the masks and filters disabled.
-    if(myCan.begin(CAN_500KBPS) == CAN_OK) 
+    if (myCan.begin(CAN_500KBPS) == CAN_OK)
       Serial.println("MCP2515 500KBPS Initialized Successfully!");
-    else 
+    else
     {
       while (1)
       {
         Serial.println("Error Initializing MCP2515 500KBPS...");
-        
+
         digitalWrite(led_pwr, HIGH);
         delay(300);
         digitalWrite(led_pwr, LOW);
@@ -59,11 +61,11 @@ void CAN_initialize(){
   digitalWrite(led_pwr, HIGH);
 }
 
-CAN_message_cyclic::CAN_message_cyclic(long can_id, int can_dlc, byte *can_data, int can_period){
+CAN_message_cyclic::CAN_message_cyclic(long can_id, int can_dlc, byte *can_data, int can_period) {
   id = can_id;
   dlc = can_dlc;
 
-  for (int i=0; i<8; i++)
+  for (int i = 0; i < 8; i++)
   {
     data[i] = can_data[i];
   }
@@ -77,7 +79,7 @@ CAN_message_cyclic::CAN_message_cyclic(long can_id, int can_dlc, byte *can_data,
   pin_baud_select_prev = digitalRead(pin_baud_select);
 }
 
-void CAN_message_cyclic::send_CAN(){
+void CAN_message_cyclic::send_CAN() {
   if (millis() > millis_next)
   {
     // send data:  ID = 0x100, Standard CAN Frame, Data length = 8 bytes, 'data' = array of data bytes to send
@@ -89,14 +91,14 @@ void CAN_message_cyclic::send_CAN(){
       if (pin_baud_select_curr)
       {
         // Initialize MCP2515 running at 16MHz with a baudrate of 250kb/s and the masks and filters disabled.
-        if(myCan.begin(CAN_250KBPS) == CAN_OK) 
+        if (myCan.begin(CAN_250KBPS) == CAN_OK)
           Serial.println("MCP2515 250KBPS Initialized Successfully!");
-        else 
+        else
         {
           while (1)
           {
             Serial.println("Error Initializing MCP2515 250KBPS...");
-            
+
             digitalWrite(led_pwr, HIGH);
             delay(300);
             digitalWrite(led_pwr, LOW);
@@ -109,14 +111,14 @@ void CAN_message_cyclic::send_CAN(){
       else
       {
         // Initialize MCP2515 running at 16MHz with a baudrate of 500kb/s and the masks and filters disabled.
-        if(myCan.begin(CAN_500KBPS) == CAN_OK) 
+        if (myCan.begin(CAN_500KBPS) == CAN_OK)
           Serial.println("MCP2515 500KBPS Initialized Successfully!");
-        else 
+        else
         {
           while (1)
           {
             Serial.println("Error Initializing MCP2515 500KBPS...");
-            
+
             digitalWrite(led_pwr, HIGH);
             delay(300);
             digitalWrite(led_pwr, LOW);
@@ -128,16 +130,16 @@ void CAN_message_cyclic::send_CAN(){
       }
     }
     pin_baud_select_prev = pin_baud_select_curr;
-    
+
     sndStat = myCan.sendMsgBuf(id, CAN_ID_29_BIT, dlc, data);;
-    
-    if(sndStat == CAN_OK)
+
+    if (sndStat == CAN_OK)
     {
       //Serial.print("SENT AND RECEIVED, message id: ");
       //Serial.print(id, HEX);
       //Serial.println();
-    } 
-    else 
+    }
+    else
     {
       //Serial.print("ERROR SENDING MESSAGE, message id: ");
       //Serial.print(id, HEX);
@@ -162,13 +164,26 @@ void CAN_message_cyclic::send_CAN(){
   }
 }
 
-void MCP2515_ISR(){
-    flagRecv = 1;
+void SD_initialize() {
+  if (!SD.begin(4))
+  {
+    SERIAL.println("SD initialization failed!");
+    while (1);
+  }
+  SERIAL.println("SD initialization done.");
+
+  File myFile = SD.open("test.txt", FILE_WRITE);
+  myFile.println("test");
+  myFile.close();
 }
 
-void print_can_receive(){
-  if(flagRecv) 
-  {                                   // check if get data
+void MCP2515_ISR() {
+  flagRecv = 1;
+}
+
+void print_can_receive() {
+  if (flagRecv)
+  { // check if get data
     flagRecv = 0;                   // clear flag
     unsigned long id = 0;
 
@@ -176,20 +191,64 @@ void print_can_receive(){
     // If either the bus is saturated or the MCU is busy,
     // both RX buffers may be in use and reading a single
     // message does not clear the IRQ conditon.
-    while (myCan.checkReceive() == CAN_MSGAVAIL) 
+    while (myCan.checkReceive() == CAN_MSGAVAIL)
     {
       // read data,  len: data length, buf: data buf
       myCan.readMsgBufID(&id, &len, buf);
 
+      /*
+      Serial.print(((double)millis()) / 1000.0);
+      Serial.print(" ");
+      Serial.print("1");
+      Serial.print("  ");
       Serial.print(id);
-      Serial.print(",");
-      
-      for(int i = 0; i<len; i++)
+      Serial.print("x");
+      Serial.print("  ");
+      Serial.print("Rx");
+      Serial.print("            ");
+      Serial.print(len);
+      Serial.print(" ");
+
+      for (int i = 0; i < len; i++)
       {
         Serial.print(buf[i]);
-        Serial.print(",");
+        Serial.print(" ");
       }
+
+      Serial.print("            ");
+      Serial.print(message_count);
       Serial.println();
+      */
+
+      File myFile = SD.open("test.txt", FILE_WRITE);
+      
+      String message_log = "";
+      
+      message_log += String(((double)millis())/1000.0);
+      message_log += " ";
+      message_log += "1";
+      message_log += "  ";
+      message_log += String(id);
+      message_log += "x";
+      message_log += "  ";
+      message_log += "Rx";
+      message_log += "            ";
+      message_log += String(len);
+      message_log += " ";
+
+      for (int i = 0; i < len; i++)
+      {
+        message_log += String(buf[i], HEX);
+        message_log += " ";
+      }
+
+      message_log += "            ";
+      message_log += String(message_count);
+      
+      myFile.println(message_log);
+      myFile.close();
+
+      message_count++;
     }
   }
 }
