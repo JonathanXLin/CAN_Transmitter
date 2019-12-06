@@ -1,11 +1,19 @@
-#include <Arduino.h>
-#include <mcp_can.h>
+#include "mcp_can.h"
 #include <SPI.h>
+#include <SD.h>
+#include <String.h>
 
-#define led_pwr   5
+#define led_pwr   7
 #define led_tx    6
 
 #define pin_baud_select   8
+
+/*SAMD core*/
+#ifdef ARDUINO_SAMD_VARIANT_COMPLIANCE
+  #define SERIAL SerialUSB
+#else
+  #define SERIAL Serial
+#endif
 
 enum CAN_id_length {CAN_ID_11_BIT, CAN_ID_29_BIT};
 
@@ -22,7 +30,8 @@ class CAN_message_cyclic
     int pin_baud_select_prev; // previous state of pin baud select
   public:
     CAN_message_cyclic(long can_id, int can_dlc, byte *can_data, int can_period);
-    void send_CAN(MCP_CAN myCan);
+    void send_CAN();
 };
 
-void CAN_initialize(MCP_CAN myCan);
+//Run once at start to initialize CAN baud rate.
+void CAN_initialize();
