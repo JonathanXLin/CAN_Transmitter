@@ -1,8 +1,10 @@
 # CAN_Transmitter
 
+<br>
 <p align="center"> 
-  <img src="can_transmitter.jpg" width="600">
+  <img src="can_transmitter.jpg" width="400">
 </p>
+<br>
 
 Please read the User Guide for more information.
 
