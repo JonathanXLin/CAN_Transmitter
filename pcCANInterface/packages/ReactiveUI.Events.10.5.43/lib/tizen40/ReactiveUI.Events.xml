@@ -1,0 +1,1615 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReactiveUI.Events</name>
+    </assembly>
+    <members>
+        <member name="T:System.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.EventExtensions.Events(System.AppDomain)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.AppDomain"/> class.
+            </summary>
+        </member>
+        <member name="T:System.AppDomainEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.AppDomain"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.AppDomainEvents.#ctor(System.AppDomain)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.AppDomain"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.AppDomainEvents.AssemblyLoad">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.AppDomain.AssemblyLoad"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.AppDomainEvents.DomainUnload">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.AppDomain.DomainUnload"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.AppDomainEvents.FirstChanceException">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.AppDomain.FirstChanceException"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.AppDomainEvents.ProcessExit">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.AppDomain.ProcessExit"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.AppDomainEvents.UnhandledException">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.AppDomain.UnhandledException"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Collections.Specialized.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Collections.Specialized"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Collections.Specialized.EventExtensions.Events(System.Collections.Specialized.INotifyCollectionChanged)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Collections.Specialized.INotifyCollectionChanged"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Collections.Specialized.INotifyCollectionChangedEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Collections.Specialized.INotifyCollectionChanged"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Collections.Specialized.INotifyCollectionChangedEvents.#ctor(System.Collections.Specialized.INotifyCollectionChanged)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Collections.Specialized.INotifyCollectionChanged"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Collections.Specialized.INotifyCollectionChangedEvents.CollectionChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.ComponentModel"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.EventExtensions.Events(System.ComponentModel.BackgroundWorker)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.BackgroundWorker"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.EventExtensions.Events(System.ComponentModel.Component)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.Component"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.EventExtensions.Events(System.ComponentModel.IBindingList)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.IBindingList"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.EventExtensions.Events(System.ComponentModel.IComponent)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.IComponent"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.EventExtensions.Events(System.ComponentModel.INotifyDataErrorInfo)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.INotifyDataErrorInfo"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.EventExtensions.Events(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.INotifyPropertyChanged"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.EventExtensions.Events(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.INotifyPropertyChanging"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.EventExtensions.Events(System.ComponentModel.ISupportInitializeNotification)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.ISupportInitializeNotification"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.EventExtensions.Events(System.ComponentModel.MarshalByValueComponent)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.MarshalByValueComponent"/> class.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.BackgroundWorkerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.BackgroundWorker"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.BackgroundWorkerEvents.#ctor(System.ComponentModel.BackgroundWorker)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.BackgroundWorker"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.BackgroundWorkerEvents.DoWork">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.BackgroundWorker.DoWork"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.BackgroundWorkerEvents.ProgressChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.BackgroundWorker.ProgressChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.BackgroundWorkerEvents.RunWorkerCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.ComponentEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.Component"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.ComponentEvents.#ctor(System.ComponentModel.Component)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.Component"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.ComponentEvents.Disposed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Component.Disposed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.IBindingListEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.IBindingList"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.IBindingListEvents.#ctor(System.ComponentModel.IBindingList)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.IBindingList"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.IBindingListEvents.ListChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.IBindingList.ListChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.IComponentEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.IComponent"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.IComponentEvents.#ctor(System.ComponentModel.IComponent)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.IComponent"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.IComponentEvents.Disposed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.IComponent.Disposed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.INotifyDataErrorInfoEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.INotifyDataErrorInfo"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.INotifyDataErrorInfoEvents.#ctor(System.ComponentModel.INotifyDataErrorInfo)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.INotifyDataErrorInfo"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.INotifyDataErrorInfoEvents.ErrorsChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.INotifyPropertyChangedEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.INotifyPropertyChanged"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.INotifyPropertyChangedEvents.#ctor(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.INotifyPropertyChanged"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.INotifyPropertyChangedEvents.PropertyChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.INotifyPropertyChangingEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.INotifyPropertyChanging"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.INotifyPropertyChangingEvents.#ctor(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.INotifyPropertyChanging"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.INotifyPropertyChangingEvents.PropertyChanging">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.INotifyPropertyChanging.PropertyChanging"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.ISupportInitializeNotificationEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.ISupportInitializeNotification"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.ISupportInitializeNotificationEvents.#ctor(System.ComponentModel.ISupportInitializeNotification)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.ISupportInitializeNotification"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.ISupportInitializeNotificationEvents.Initialized">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.ISupportInitializeNotification.Initialized"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.MarshalByValueComponentEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.MarshalByValueComponent"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.MarshalByValueComponentEvents.#ctor(System.ComponentModel.MarshalByValueComponent)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.MarshalByValueComponent"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.MarshalByValueComponentEvents.Disposed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.MarshalByValueComponent.Disposed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.Design.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.ComponentModel.Design"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.EventExtensions.Events(System.ComponentModel.Design.IComponentChangeService)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.Design.IComponentChangeService"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.EventExtensions.Events(System.ComponentModel.Design.IDesignerEventService)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.Design.IDesignerEventService"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.EventExtensions.Events(System.ComponentModel.Design.IDesignerHost)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.Design.IDesignerHost"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.EventExtensions.Events(System.ComponentModel.Design.ISelectionService)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.Design.ISelectionService"/> class.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.EventExtensions.Events(System.ComponentModel.Design.MenuCommand)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.Design.MenuCommand"/> class.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.Design.IComponentChangeServiceEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.Design.IComponentChangeService"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.IComponentChangeServiceEvents.#ctor(System.ComponentModel.Design.IComponentChangeService)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.Design.IComponentChangeService"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.Design.IComponentChangeServiceEvents.ComponentAdded">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IComponentChangeService.ComponentAdded"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IComponentChangeServiceEvents.ComponentAdding">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IComponentChangeService.ComponentAdding"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IComponentChangeServiceEvents.ComponentChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IComponentChangeServiceEvents.ComponentChanging">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IComponentChangeService.ComponentChanging"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IComponentChangeServiceEvents.ComponentRemoved">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IComponentChangeServiceEvents.ComponentRemoving">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IComponentChangeServiceEvents.ComponentRename">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IComponentChangeService.ComponentRename"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.Design.IDesignerEventServiceEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.Design.IDesignerEventService"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.IDesignerEventServiceEvents.#ctor(System.ComponentModel.Design.IDesignerEventService)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.Design.IDesignerEventService"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerEventServiceEvents.ActiveDesignerChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerEventService.ActiveDesignerChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerEventServiceEvents.DesignerCreated">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerEventService.DesignerCreated"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerEventServiceEvents.DesignerDisposed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerEventService.DesignerDisposed"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerEventServiceEvents.SelectionChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerEventService.SelectionChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.Design.IDesignerHostEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.Design.IDesignerHost"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.IDesignerHostEvents.#ctor(System.ComponentModel.Design.IDesignerHost)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.Design.IDesignerHost"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerHostEvents.Activated">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerHost.Activated"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerHostEvents.Deactivated">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerHost.Deactivated"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerHostEvents.LoadComplete">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerHost.LoadComplete"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerHostEvents.TransactionClosed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerHost.TransactionClosed"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerHostEvents.TransactionClosing">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerHost.TransactionClosing"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerHostEvents.TransactionOpened">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerHost.TransactionOpened"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.IDesignerHostEvents.TransactionOpening">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.IDesignerHost.TransactionOpening"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.Design.ISelectionServiceEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.Design.ISelectionService"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.ISelectionServiceEvents.#ctor(System.ComponentModel.Design.ISelectionService)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.Design.ISelectionService"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.Design.ISelectionServiceEvents.SelectionChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.ISelectionService.SelectionChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.ISelectionServiceEvents.SelectionChanging">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.ISelectionService.SelectionChanging"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.Design.MenuCommandEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.Design.MenuCommand"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.MenuCommandEvents.#ctor(System.ComponentModel.Design.MenuCommand)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.Design.MenuCommand"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.Design.MenuCommandEvents.CommandChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.MenuCommand.CommandChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.Design.Serialization.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.ComponentModel.Design.Serialization"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.Serialization.EventExtensions.Events(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager"/> class.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManagerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManagerEvents.#ctor(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.ComponentModel.Design.Serialization.IDesignerSerializationManagerEvents.ResolveName">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Design.Serialization.IDesignerSerializationManagerEvents.SerializationComplete">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.Events">
+            <summary>
+            A class that contains extension methods to wrap events contained within static classes within the <see cref = "N:System.ComponentModel"/> namespace.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.Events.TypeDescriptorRefreshed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.ComponentModel.TypeDescriptor.Refreshed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Data"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Data.EventExtensions.Events(System.Data.ConstraintCollection)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.ConstraintCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.EventExtensions.Events(System.Data.DataColumnCollection)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.DataColumnCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.EventExtensions.Events(System.Data.DataRelationCollection)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.DataRelationCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.EventExtensions.Events(System.Data.DataRowView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.DataRowView"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.EventExtensions.Events(System.Data.DataSet)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.DataSet"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.EventExtensions.Events(System.Data.DataTable)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.DataTable"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.EventExtensions.Events(System.Data.DataTableCollection)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.DataTableCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.EventExtensions.Events(System.Data.DataView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.DataView"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.EventExtensions.Events(System.Data.DataViewManager)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.DataViewManager"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Data.ConstraintCollectionEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.ConstraintCollection"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.ConstraintCollectionEvents.#ctor(System.Data.ConstraintCollection)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.ConstraintCollection"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.ConstraintCollectionEvents.CollectionChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.ConstraintCollection.CollectionChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.DataColumnCollectionEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.DataColumnCollection"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.DataColumnCollectionEvents.#ctor(System.Data.DataColumnCollection)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.DataColumnCollection"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.DataColumnCollectionEvents.CollectionChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataColumnCollection.CollectionChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.DataRelationCollectionEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.DataRelationCollection"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.DataRelationCollectionEvents.#ctor(System.Data.DataRelationCollection)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.DataRelationCollection"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.DataRelationCollectionEvents.CollectionChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataRelationCollection.CollectionChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.DataRowViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.DataRowView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.DataRowViewEvents.#ctor(System.Data.DataRowView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.DataRowView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.DataRowViewEvents.PropertyChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataRowView.PropertyChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.DataSetEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.DataSet"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.DataSetEvents.#ctor(System.Data.DataSet)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.DataSet"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.DataSetEvents.Initialized">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataSet.Initialized"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataSetEvents.MergeFailed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataSet.MergeFailed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.DataTableEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.DataTable"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.DataTableEvents.#ctor(System.Data.DataTable)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.DataTable"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.DataTableEvents.ColumnChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTable.ColumnChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataTableEvents.ColumnChanging">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTable.ColumnChanging"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataTableEvents.Initialized">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTable.Initialized"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataTableEvents.RowChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTable.RowChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataTableEvents.RowChanging">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTable.RowChanging"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataTableEvents.RowDeleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTable.RowDeleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataTableEvents.RowDeleting">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTable.RowDeleting"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataTableEvents.TableCleared">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTable.TableCleared"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataTableEvents.TableClearing">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTable.TableClearing"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataTableEvents.TableNewRow">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTable.TableNewRow"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.DataTableCollectionEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.DataTableCollection"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.DataTableCollectionEvents.#ctor(System.Data.DataTableCollection)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.DataTableCollection"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.DataTableCollectionEvents.CollectionChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTableCollection.CollectionChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataTableCollectionEvents.CollectionChanging">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataTableCollection.CollectionChanging"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.DataViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.DataView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.DataViewEvents.#ctor(System.Data.DataView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.DataView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.DataViewEvents.Initialized">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataView.Initialized"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Data.DataViewEvents.ListChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataView.ListChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.DataViewManagerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.DataViewManager"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.DataViewManagerEvents.#ctor(System.Data.DataViewManager)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.DataViewManager"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.DataViewManagerEvents.ListChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.DataViewManager.ListChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.Common.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Data.Common"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Data.Common.EventExtensions.Events(System.Data.Common.DataAdapter)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.Common.DataAdapter"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.Common.EventExtensions.Events(System.Data.Common.DbConnection)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Data.Common.DbConnection"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Data.Common.DataAdapterEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.Common.DataAdapter"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.Common.DataAdapterEvents.#ctor(System.Data.Common.DataAdapter)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.Common.DataAdapter"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.Common.DataAdapterEvents.FillError">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.Common.DataAdapter.FillError"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Data.Common.DbConnectionEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Data.Common.DbConnection"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Data.Common.DbConnectionEvents.#ctor(System.Data.Common.DbConnection)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Data.Common.DbConnection"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Data.Common.DbConnectionEvents.StateChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Data.Common.DbConnection.StateChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Diagnostics"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.EventExtensions.Events(System.Diagnostics.Process)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Diagnostics.Process"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.ProcessEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Diagnostics.Process"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.ProcessEvents.#ctor(System.Diagnostics.Process)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Diagnostics.Process"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Diagnostics.ProcessEvents.ErrorDataReceived">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Diagnostics.Process.ErrorDataReceived"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Diagnostics.ProcessEvents.Exited">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Diagnostics.Process.Exited"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Diagnostics.ProcessEvents.OutputDataReceived">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Diagnostics.Process.OutputDataReceived"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.Tracing.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Diagnostics.Tracing"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.Tracing.EventExtensions.Events(System.Diagnostics.Tracing.EventListener)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Diagnostics.Tracing.EventListener"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.Tracing.EventExtensions.Events(System.Diagnostics.Tracing.EventSource)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Diagnostics.Tracing.EventSource"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.Tracing.EventListenerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Diagnostics.Tracing.EventListener"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.Tracing.EventListenerEvents.#ctor(System.Diagnostics.Tracing.EventListener)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Diagnostics.Tracing.EventListener"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Diagnostics.Tracing.EventListenerEvents.EventSourceCreated">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Diagnostics.Tracing.EventListener.EventSourceCreated"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Diagnostics.Tracing.EventListenerEvents.EventWritten">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Diagnostics.Tracing.EventListener.EventWritten"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.Tracing.EventSourceEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Diagnostics.Tracing.EventSource"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.Tracing.EventSourceEvents.#ctor(System.Diagnostics.Tracing.EventSource)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Diagnostics.Tracing.EventSource"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Diagnostics.Tracing.EventSourceEvents.EventCommandExecuted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Diagnostics.Tracing.EventSource.EventCommandExecuted"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.Contracts.Events">
+            <summary>
+            A class that contains extension methods to wrap events contained within static classes within the <see cref = "N:System.Diagnostics.Contracts"/> namespace.
+            </summary>
+        </member>
+        <member name="P:System.Diagnostics.Contracts.Events.ContractContractFailed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Diagnostics.Contracts.Contract.ContractFailed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.IO.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.IO"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.IO.EventExtensions.Events(System.IO.FileSystemWatcher)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.IO.FileSystemWatcher"/> class.
+            </summary>
+        </member>
+        <member name="T:System.IO.FileSystemWatcherEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.IO.FileSystemWatcher"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.IO.FileSystemWatcherEvents.#ctor(System.IO.FileSystemWatcher)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.IO.FileSystemWatcher"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.IO.FileSystemWatcherEvents.Changed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.IO.FileSystemWatcher.Changed"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.IO.FileSystemWatcherEvents.Created">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.IO.FileSystemWatcher.Created"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.IO.FileSystemWatcherEvents.Deleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.IO.FileSystemWatcher.Deleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.IO.FileSystemWatcherEvents.Error">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.IO.FileSystemWatcher.Error"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.IO.FileSystemWatcherEvents.Renamed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.IO.FileSystemWatcher.Renamed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Net.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Net"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Net.EventExtensions.Events(System.Net.WebClient)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Net.WebClient"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Net.WebClientEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Net.WebClient"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Net.WebClientEvents.#ctor(System.Net.WebClient)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Net.WebClient"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Net.WebClientEvents.DownloadDataCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.DownloadDataCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.DownloadFileCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.DownloadFileCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.DownloadProgressChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.DownloadProgressChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.DownloadStringCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.DownloadStringCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.OpenReadCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.OpenReadCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.OpenWriteCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.OpenWriteCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.UploadDataCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.UploadDataCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.UploadFileCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.UploadFileCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.UploadProgressChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.UploadProgressChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.UploadStringCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.UploadStringCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.UploadValuesCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.UploadValuesCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.WebClientEvents.WriteStreamClosed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.WebClient.WriteStreamClosed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Net.Mail.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Net.Mail"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Net.Mail.EventExtensions.Events(System.Net.Mail.SmtpClient)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Net.Mail.SmtpClient"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Net.Mail.SmtpClientEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Net.Mail.SmtpClient"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Net.Mail.SmtpClientEvents.#ctor(System.Net.Mail.SmtpClient)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Net.Mail.SmtpClient"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Net.Mail.SmtpClientEvents.SendCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.Mail.SmtpClient.SendCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Net.NetworkInformation.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Net.NetworkInformation"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Net.NetworkInformation.EventExtensions.Events(System.Net.NetworkInformation.Ping)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Net.NetworkInformation.Ping"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Net.NetworkInformation.PingEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Net.NetworkInformation.Ping"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Net.NetworkInformation.PingEvents.#ctor(System.Net.NetworkInformation.Ping)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Net.NetworkInformation.Ping"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Net.NetworkInformation.PingEvents.PingCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.NetworkInformation.Ping.PingCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Net.NetworkInformation.Events">
+            <summary>
+            A class that contains extension methods to wrap events contained within static classes within the <see cref = "N:System.Net.NetworkInformation"/> namespace.
+            </summary>
+        </member>
+        <member name="P:System.Net.NetworkInformation.Events.NetworkChangeNetworkAddressChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Net.NetworkInformation.Events.NetworkChangeNetworkAvailabilityChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.NetworkInformation.NetworkChange.NetworkAvailabilityChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Net.Sockets.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Net.Sockets"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Net.Sockets.EventExtensions.Events(System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Net.Sockets.SocketAsyncEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Net.Sockets.SocketAsyncEventArgsEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Net.Sockets.SocketAsyncEventArgs"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Net.Sockets.SocketAsyncEventArgsEvents.#ctor(System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Net.Sockets.SocketAsyncEventArgs"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Net.Sockets.SocketAsyncEventArgsEvents.Completed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Net.Sockets.SocketAsyncEventArgs.Completed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Reactive.PlatformServices.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Reactive.PlatformServices"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Reactive.PlatformServices.EventExtensions.Events(System.Reactive.PlatformServices.IHostLifecycleNotifications)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Reactive.PlatformServices.IHostLifecycleNotifications"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Reactive.PlatformServices.EventExtensions.Events(System.Reactive.PlatformServices.INotifySystemClockChanged)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Reactive.PlatformServices.INotifySystemClockChanged"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Reactive.PlatformServices.EventExtensions.Events(System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitor)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitor"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Reactive.PlatformServices.IHostLifecycleNotificationsEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Reactive.PlatformServices.IHostLifecycleNotifications"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Reactive.PlatformServices.IHostLifecycleNotificationsEvents.#ctor(System.Reactive.PlatformServices.IHostLifecycleNotifications)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Reactive.PlatformServices.IHostLifecycleNotifications"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Reactive.PlatformServices.IHostLifecycleNotificationsEvents.Resuming">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Reactive.PlatformServices.IHostLifecycleNotifications.Resuming"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Reactive.PlatformServices.IHostLifecycleNotificationsEvents.Suspending">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Reactive.PlatformServices.IHostLifecycleNotifications.Suspending"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Reactive.PlatformServices.INotifySystemClockChangedEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Reactive.PlatformServices.INotifySystemClockChanged"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Reactive.PlatformServices.INotifySystemClockChangedEvents.#ctor(System.Reactive.PlatformServices.INotifySystemClockChanged)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Reactive.PlatformServices.INotifySystemClockChanged"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Reactive.PlatformServices.INotifySystemClockChangedEvents.SystemClockChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Reactive.PlatformServices.INotifySystemClockChanged.SystemClockChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitorEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitor"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitorEvents.#ctor(System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitor)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitor"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitorEvents.SystemClockChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Reactive.PlatformServices.PeriodicTimerSystemClockMonitor.SystemClockChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Reactive.PlatformServices.Events">
+            <summary>
+            A class that contains extension methods to wrap events contained within static classes within the <see cref = "N:System.Reactive.PlatformServices"/> namespace.
+            </summary>
+        </member>
+        <member name="P:System.Reactive.PlatformServices.Events.HostLifecycleServiceResuming">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Reactive.PlatformServices.HostLifecycleService.Resuming"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Reactive.PlatformServices.Events.HostLifecycleServiceSuspending">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Reactive.PlatformServices.HostLifecycleService.Suspending"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Loader.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Runtime.Loader"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.Loader.EventExtensions.Events(System.Runtime.Loader.AssemblyLoadContext)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Runtime.Loader.AssemblyLoadContext"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Loader.AssemblyLoadContextEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Runtime.Loader.AssemblyLoadContext"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.Loader.AssemblyLoadContextEvents.#ctor(System.Runtime.Loader.AssemblyLoadContext)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Runtime.Loader.AssemblyLoadContext"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Runtime.Loader.AssemblyLoadContextEvents.Unloading">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Runtime.Loader.AssemblyLoadContext.Unloading"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Timers.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Timers"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Timers.EventExtensions.Events(System.Timers.Timer)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Timers.Timer"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Timers.TimerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Timers.Timer"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Timers.TimerEvents.#ctor(System.Timers.Timer)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Timers.Timer"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Timers.TimerEvents.Elapsed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Timers.Timer.Elapsed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Transactions.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Transactions"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Transactions.EventExtensions.Events(System.Transactions.Transaction)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Transactions.Transaction"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Transactions.TransactionEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Transactions.Transaction"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Transactions.TransactionEvents.#ctor(System.Transactions.Transaction)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Transactions.Transaction"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Transactions.TransactionEvents.TransactionCompleted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Transactions.Transaction.TransactionCompleted"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Transactions.Events">
+            <summary>
+            A class that contains extension methods to wrap events contained within static classes within the <see cref = "N:System.Transactions"/> namespace.
+            </summary>
+        </member>
+        <member name="P:System.Transactions.Events.TransactionManagerDistributedTransactionStarted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Transactions.TransactionManager.DistributedTransactionStarted"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Input.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Windows.Input"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Input.EventExtensions.Events(System.Windows.Input.ICommand)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Windows.Input.ICommand"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Input.ICommandEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Windows.Input.ICommand"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Input.ICommandEvents.#ctor(System.Windows.Input.ICommand)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Windows.Input.ICommand"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Windows.Input.ICommandEvents.CanExecuteChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Windows.Input.ICommand.CanExecuteChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Xml.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Xml"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Xml.EventExtensions.Events(System.Xml.XmlDocument)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Xml.XmlDocument"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Xml.EventExtensions.Events(System.Xml.XmlReaderSettings)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Xml.XmlReaderSettings"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Xml.EventExtensions.Events(System.Xml.XmlValidatingReader)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Xml.XmlValidatingReader"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Xml.XmlDocumentEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Xml.XmlDocument"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Xml.XmlDocumentEvents.#ctor(System.Xml.XmlDocument)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Xml.XmlDocument"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Xml.XmlDocumentEvents.NodeChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.XmlDocument.NodeChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Xml.XmlDocumentEvents.NodeChanging">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.XmlDocument.NodeChanging"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Xml.XmlDocumentEvents.NodeInserted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.XmlDocument.NodeInserted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Xml.XmlDocumentEvents.NodeInserting">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.XmlDocument.NodeInserting"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Xml.XmlDocumentEvents.NodeRemoved">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.XmlDocument.NodeRemoved"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Xml.XmlDocumentEvents.NodeRemoving">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.XmlDocument.NodeRemoving"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Xml.XmlReaderSettingsEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Xml.XmlReaderSettings"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Xml.XmlReaderSettingsEvents.#ctor(System.Xml.XmlReaderSettings)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Xml.XmlReaderSettings"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Xml.XmlReaderSettingsEvents.ValidationEventHandler">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.XmlReaderSettings.ValidationEventHandler"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Xml.XmlValidatingReaderEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Xml.XmlValidatingReader"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Xml.XmlValidatingReaderEvents.#ctor(System.Xml.XmlValidatingReader)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Xml.XmlValidatingReader"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Xml.XmlValidatingReaderEvents.ValidationEventHandler">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.XmlValidatingReader.ValidationEventHandler"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Xml.Linq.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Xml.Linq"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Linq.EventExtensions.Events(System.Xml.Linq.XObject)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Xml.Linq.XObject"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Xml.Linq.XObjectEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Xml.Linq.XObject"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Linq.XObjectEvents.#ctor(System.Xml.Linq.XObject)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Xml.Linq.XObject"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Xml.Linq.XObjectEvents.Changed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.Linq.XObject.Changed"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Xml.Linq.XObjectEvents.Changing">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.Linq.XObject.Changing"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Xml.Schema.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Xml.Schema"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Schema.EventExtensions.Events(System.Xml.Schema.XmlSchemaCollection)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Xml.Schema.XmlSchemaCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Schema.EventExtensions.Events(System.Xml.Schema.XmlSchemaSet)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Xml.Schema.XmlSchemaSet"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Schema.EventExtensions.Events(System.Xml.Schema.XmlSchemaValidator)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Xml.Schema.XmlSchemaValidator"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Xml.Schema.XmlSchemaCollectionEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Xml.Schema.XmlSchemaCollection"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Schema.XmlSchemaCollectionEvents.#ctor(System.Xml.Schema.XmlSchemaCollection)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Xml.Schema.XmlSchemaCollection"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Xml.Schema.XmlSchemaCollectionEvents.ValidationEventHandler">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.Schema.XmlSchemaCollection.ValidationEventHandler"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Xml.Schema.XmlSchemaSetEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Xml.Schema.XmlSchemaSet"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Schema.XmlSchemaSetEvents.#ctor(System.Xml.Schema.XmlSchemaSet)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Xml.Schema.XmlSchemaSet"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Xml.Schema.XmlSchemaSetEvents.ValidationEventHandler">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.Schema.XmlSchemaSet.ValidationEventHandler"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Xml.Schema.XmlSchemaValidatorEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Xml.Schema.XmlSchemaValidator"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Schema.XmlSchemaValidatorEvents.#ctor(System.Xml.Schema.XmlSchemaValidator)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Xml.Schema.XmlSchemaValidator"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Xml.Schema.XmlSchemaValidatorEvents.ValidationEventHandler">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.Schema.XmlSchemaValidator.ValidationEventHandler"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Xml.Serialization.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Xml.Serialization"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Serialization.EventExtensions.Events(System.Xml.Serialization.XmlSerializer)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Xml.Serialization.XmlSerializer"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Xml.Serialization.XmlSerializerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Xml.Serialization.XmlSerializer"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Serialization.XmlSerializerEvents.#ctor(System.Xml.Serialization.XmlSerializer)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Xml.Serialization.XmlSerializer"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Xml.Serialization.XmlSerializerEvents.UnknownAttribute">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.Serialization.XmlSerializer.UnknownAttribute"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Xml.Serialization.XmlSerializerEvents.UnknownElement">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.Serialization.XmlSerializer.UnknownElement"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Xml.Serialization.XmlSerializerEvents.UnknownNode">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.Serialization.XmlSerializer.UnknownNode"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:System.Xml.Serialization.XmlSerializerEvents.UnreferencedObject">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.Serialization.XmlSerializer.UnreferencedObject"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Xml.Xsl.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:System.Xml.Xsl"/> namespace.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Xsl.EventExtensions.Events(System.Xml.Xsl.XsltArgumentList)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:System.Xml.Xsl.XsltArgumentList"/> class.
+            </summary>
+        </member>
+        <member name="T:System.Xml.Xsl.XsltArgumentListEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:System.Xml.Xsl.XsltArgumentList"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:System.Xml.Xsl.XsltArgumentListEvents.#ctor(System.Xml.Xsl.XsltArgumentList)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:System.Xml.Xsl.XsltArgumentList"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:System.Xml.Xsl.XsltArgumentListEvents.XsltMessageEncountered">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Events">
+            <summary>
+            A class that contains extension methods to wrap events contained within static classes within the <see cref = "N:System"/> namespace.
+            </summary>
+        </member>
+        <member name="P:System.Events.ConsoleCancelKeyPress">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Console.CancelKeyPress"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:System.Threading.Tasks.Events">
+            <summary>
+            A class that contains extension methods to wrap events contained within static classes within the <see cref = "N:System.Threading.Tasks"/> namespace.
+            </summary>
+        </member>
+        <member name="P:System.Threading.Tasks.Events.TaskSchedulerUnobservedTaskException">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:System.Threading.Tasks.TaskScheduler.UnobservedTaskException"/> event triggers.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -4,7 +4,7 @@
 winexe
 C#
 .cs
-C:\Users\Tom\source\repos\CAN Opener\CAN Opener\obj\Debug\
+C:\Users\Tom\Source\Repos\JonathanXLin\CAN_Transmitter\pcCANInterface\pcCANInterface\obj\Debug\
 pcCANInterface
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 2-1598872728
 
-161475814923
-131569487696
+18-2034879221
+1371257004043
 Views\App.xaml;Views\MainWindow.xaml;
 
-False
+True
 

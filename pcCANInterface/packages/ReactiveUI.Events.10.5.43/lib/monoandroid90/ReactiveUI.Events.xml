@@ -1,0 +1,2696 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReactiveUI.Events</name>
+    </assembly>
+    <members>
+        <member name="T:Android.AccessibilityServices.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.AccessibilityServices"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.AccessibilityServices.EventExtensions.Events(Android.AccessibilityServices.AccessibilityService.SoftKeyboardController)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.AccessibilityServices.AccessibilityService.SoftKeyboardController"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.AccessibilityServices.SoftKeyboardControllerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.AccessibilityServices.AccessibilityService.SoftKeyboardController"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.AccessibilityServices.SoftKeyboardControllerEvents.#ctor(Android.AccessibilityServices.AccessibilityService.SoftKeyboardController)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.AccessibilityServices.AccessibilityService.SoftKeyboardController"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.AccessibilityServices.SoftKeyboardControllerEvents.ShowModeChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.AccessibilityServices.AccessibilityService.SoftKeyboardController.ShowModeChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Accounts.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Accounts"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Accounts.EventExtensions.Events(Android.Accounts.AccountManager)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Accounts.AccountManager"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Accounts.AccountManagerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Accounts.AccountManager"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Accounts.AccountManagerEvents.#ctor(Android.Accounts.AccountManager)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Accounts.AccountManager"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Accounts.AccountManagerEvents.AccountsUpdated">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Accounts.AccountManager.AccountsUpdated"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Animation.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Animation"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Animation.EventExtensions.Events(Android.Animation.Animator)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Animation.Animator"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Animation.EventExtensions.Events(Android.Animation.LayoutTransition)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Animation.LayoutTransition"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Animation.EventExtensions.Events(Android.Animation.TimeAnimator)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Animation.TimeAnimator"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Animation.EventExtensions.Events(Android.Animation.ValueAnimator)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Animation.ValueAnimator"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Animation.AnimatorEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Animation.Animator"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Animation.AnimatorEvents.#ctor(Android.Animation.Animator)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Animation.Animator"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Animation.AnimatorEvents.AnimationCancel">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Animation.Animator.AnimationCancel"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Animation.AnimatorEvents.AnimationEnd">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Animation.Animator.AnimationEnd"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Animation.AnimatorEvents.AnimationPause">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Animation.Animator.AnimationPause"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Animation.AnimatorEvents.AnimationRepeat">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Animation.Animator.AnimationRepeat"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Animation.AnimatorEvents.AnimationResume">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Animation.Animator.AnimationResume"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Animation.AnimatorEvents.AnimationStart">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Animation.Animator.AnimationStart"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Animation.LayoutTransitionEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Animation.LayoutTransition"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Animation.LayoutTransitionEvents.#ctor(Android.Animation.LayoutTransition)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Animation.LayoutTransition"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Animation.LayoutTransitionEvents.EndTransition">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Animation.LayoutTransition.EndTransition"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Animation.LayoutTransitionEvents.StartTransition">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Animation.LayoutTransition.StartTransition"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Animation.TimeAnimatorEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Animation.TimeAnimator"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Animation.TimeAnimatorEvents.#ctor(Android.Animation.TimeAnimator)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Animation.TimeAnimator"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Animation.TimeAnimatorEvents.Time">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Animation.TimeAnimator.Time"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Animation.ValueAnimatorEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Animation.ValueAnimator"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Animation.ValueAnimatorEvents.#ctor(Android.Animation.ValueAnimator)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Animation.ValueAnimator"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Animation.ValueAnimatorEvents.Update">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Animation.ValueAnimator.Update"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.App"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.ActionBar)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.ActionBar"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.AlertDialog.Builder)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.AlertDialog.Builder"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.DatePickerDialog)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.DatePickerDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.Dialog)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.Dialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.FragmentBreadCrumbs)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.FragmentBreadCrumbs"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.FragmentManager)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.FragmentManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.MediaRouteActionProvider)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.MediaRouteActionProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.MediaRouteButton)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.MediaRouteButton"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.SearchManager)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.SearchManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.ActionBar.Tab)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.ActionBar.Tab"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.App.EventExtensions.Events(Android.App.UiAutomation)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.App.UiAutomation"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.App.ActionBarEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.ActionBar"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.ActionBarEvents.#ctor(Android.App.ActionBar)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.ActionBar"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.ActionBarEvents.MenuVisibility">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.ActionBar.MenuVisibility"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.BuilderEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.AlertDialog.Builder"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.BuilderEvents.#ctor(Android.App.AlertDialog.Builder)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.AlertDialog.Builder"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.BuilderEvents.ItemSelected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.AlertDialog.Builder.ItemSelected"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.App.BuilderEvents.ItemSelectionCleared">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.AlertDialog.Builder.ItemSelectionCleared"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.App.BuilderEvents.NothingSelected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.AlertDialog.Builder.NothingSelected"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.DatePickerDialogEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.DatePickerDialog"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.DatePickerDialogEvents.#ctor(Android.App.DatePickerDialog)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.DatePickerDialog"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.DatePickerDialogEvents.DateSet">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.DatePickerDialog.DateSet"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.DialogEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.Dialog"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.DialogEvents.#ctor(Android.App.Dialog)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.Dialog"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.DialogEvents.CancelEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.Dialog.CancelEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.App.DialogEvents.DismissEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.Dialog.DismissEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.App.DialogEvents.KeyPress">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.Dialog.KeyPress"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.App.DialogEvents.ShowEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.Dialog.ShowEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.FragmentBreadCrumbsEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.FragmentBreadCrumbs"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.FragmentBreadCrumbsEvents.#ctor(Android.App.FragmentBreadCrumbs)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.FragmentBreadCrumbs"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.FragmentBreadCrumbsEvents.BreadCrumbClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.FragmentBreadCrumbs.BreadCrumbClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.FragmentManagerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.FragmentManager"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.FragmentManagerEvents.#ctor(Android.App.FragmentManager)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.FragmentManager"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.FragmentManagerEvents.BackStackChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.FragmentManager.BackStackChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.MediaRouteActionProviderEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.MediaRouteActionProvider"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.MediaRouteActionProviderEvents.#ctor(Android.App.MediaRouteActionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.MediaRouteActionProvider"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.MediaRouteActionProviderEvents.ExtendedSettingsClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.MediaRouteActionProvider.ExtendedSettingsClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.MediaRouteButtonEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.MediaRouteButton"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.MediaRouteButtonEvents.#ctor(Android.App.MediaRouteButton)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.MediaRouteButton"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.MediaRouteButtonEvents.ExtendedSettingsClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.MediaRouteButton.ExtendedSettingsClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.SearchManagerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.SearchManager"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.SearchManagerEvents.#ctor(Android.App.SearchManager)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.SearchManager"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.SearchManagerEvents.Cancel">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.SearchManager.Cancel"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.App.SearchManagerEvents.Dismiss">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.SearchManager.Dismiss"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.TabEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.ActionBar.Tab"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.TabEvents.#ctor(Android.App.ActionBar.Tab)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.ActionBar.Tab"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.TabEvents.TabReselected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.ActionBar.Tab.TabReselected"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.App.TabEvents.TabSelected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.ActionBar.Tab.TabSelected"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.App.TabEvents.TabUnselected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.ActionBar.Tab.TabUnselected"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.App.UiAutomationEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.App.UiAutomation"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.App.UiAutomationEvents.#ctor(Android.App.UiAutomation)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.App.UiAutomation"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.App.UiAutomationEvents.AccessibilityEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.App.UiAutomation.AccessibilityEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Content.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Content"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Content.EventExtensions.Events(Android.Content.ClipboardManager)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Content.ClipboardManager"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Content.ClipboardManagerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Content.ClipboardManager"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Content.ClipboardManagerEvents.#ctor(Android.Content.ClipboardManager)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Content.ClipboardManager"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Content.ClipboardManagerEvents.PrimaryClipChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Content.ClipboardManager.PrimaryClipChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Drm.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Drm"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Drm.EventExtensions.Events(Android.Drm.DrmManagerClient)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Drm.DrmManagerClient"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Drm.DrmManagerClientEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Drm.DrmManagerClient"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Drm.DrmManagerClientEvents.#ctor(Android.Drm.DrmManagerClient)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Drm.DrmManagerClient"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Drm.DrmManagerClientEvents.Error">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Drm.DrmManagerClient.Error"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Drm.DrmManagerClientEvents.Event">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Drm.DrmManagerClient.Event"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Drm.DrmManagerClientEvents.Info">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Drm.DrmManagerClient.Info"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Gestures.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Gestures"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Gestures.EventExtensions.Events(Android.Gestures.GestureOverlayView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Gestures.GestureOverlayView"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Gestures.GestureOverlayViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Gestures.GestureOverlayView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Gestures.GestureOverlayViewEvents.#ctor(Android.Gestures.GestureOverlayView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Gestures.GestureOverlayView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Gestures.GestureOverlayViewEvents.GestureCancelled">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Gestures.GestureOverlayView.GestureCancelled"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Gestures.GestureOverlayViewEvents.GestureEnded">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Gestures.GestureOverlayView.GestureEnded"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Gestures.GestureOverlayViewEvents.GestureEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Gestures.GestureOverlayView.GestureEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Gestures.GestureOverlayViewEvents.GesturePerformed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Gestures.GestureOverlayView.GesturePerformed"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Gestures.GestureOverlayViewEvents.GestureStarted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Gestures.GestureOverlayView.GestureStarted"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Gestures.GestureOverlayViewEvents.GesturingEnded">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Gestures.GestureOverlayView.GesturingEnded"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Gestures.GestureOverlayViewEvents.GesturingStarted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Gestures.GestureOverlayView.GesturingStarted"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Graphics.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Graphics"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Graphics.EventExtensions.Events(Android.Graphics.ImageDecoder)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Graphics.ImageDecoder"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Graphics.EventExtensions.Events(Android.Graphics.SurfaceTexture)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Graphics.SurfaceTexture"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Graphics.ImageDecoderEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Graphics.ImageDecoder"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Graphics.ImageDecoderEvents.#ctor(Android.Graphics.ImageDecoder)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Graphics.ImageDecoder"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Graphics.ImageDecoderEvents.PartialImage">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Graphics.ImageDecoder.PartialImage"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Graphics.SurfaceTextureEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Graphics.SurfaceTexture"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Graphics.SurfaceTextureEvents.#ctor(Android.Graphics.SurfaceTexture)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Graphics.SurfaceTexture"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Graphics.SurfaceTextureEvents.FrameAvailable">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Graphics.SurfaceTexture.FrameAvailable"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Hardware.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Hardware"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Hardware.EventExtensions.Events(Android.Hardware.Camera)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Hardware.Camera"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Hardware.CameraEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Hardware.Camera"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Hardware.CameraEvents.#ctor(Android.Hardware.Camera)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Hardware.Camera"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Hardware.CameraEvents.FaceDetection">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Hardware.Camera.FaceDetection"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Hardware.CameraEvents.ZoomChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Hardware.Camera.ZoomChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.InputMethodServices.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.InputMethodServices"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.InputMethodServices.EventExtensions.Events(Android.InputMethodServices.KeyboardView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.InputMethodServices.KeyboardView"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.InputMethodServices.KeyboardViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.InputMethodServices.KeyboardView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.InputMethodServices.KeyboardViewEvents.#ctor(Android.InputMethodServices.KeyboardView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.InputMethodServices.KeyboardView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.InputMethodServices.KeyboardViewEvents.Key">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.InputMethodServices.KeyboardView.Key"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.InputMethodServices.KeyboardViewEvents.Press">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.InputMethodServices.KeyboardView.Press"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.InputMethodServices.KeyboardViewEvents.Release">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.InputMethodServices.KeyboardView.Release"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.InputMethodServices.KeyboardViewEvents.SwipeDownEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.InputMethodServices.KeyboardView.SwipeDownEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.InputMethodServices.KeyboardViewEvents.SwipeLeftEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.InputMethodServices.KeyboardView.SwipeLeftEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.InputMethodServices.KeyboardViewEvents.SwipeRightEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.InputMethodServices.KeyboardView.SwipeRightEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.InputMethodServices.KeyboardViewEvents.SwipeUpEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.InputMethodServices.KeyboardView.SwipeUpEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.InputMethodServices.KeyboardViewEvents.Text">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.InputMethodServices.KeyboardView.Text"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Media"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Media.EventExtensions.Events(Android.Media.AudioRecord)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.AudioRecord"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.EventExtensions.Events(Android.Media.AudioTrack)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.AudioTrack"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.EventExtensions.Events(Android.Media.JetPlayer)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.JetPlayer"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.EventExtensions.Events(Android.Media.MediaDrm)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.MediaDrm"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.EventExtensions.Events(Android.Media.MediaPlayer)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.MediaPlayer"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.EventExtensions.Events(Android.Media.MediaRecorder)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.MediaRecorder"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.EventExtensions.Events(Android.Media.RemoteControlClient)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.RemoteControlClient"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.EventExtensions.Events(Android.Media.SoundPool)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.SoundPool"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Media.AudioRecordEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.AudioRecord"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.AudioRecordEvents.#ctor(Android.Media.AudioRecord)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.AudioRecord"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.AudioRecordEvents.MarkerReached">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.AudioRecord.MarkerReached"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.AudioRecordEvents.PeriodicNotification">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.AudioRecord.PeriodicNotification"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.AudioTrackEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.AudioTrack"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.AudioTrackEvents.#ctor(Android.Media.AudioTrack)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.AudioTrack"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.AudioTrackEvents.MarkerReached">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.AudioTrack.MarkerReached"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.AudioTrackEvents.PeriodicNotification">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.AudioTrack.PeriodicNotification"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.JetPlayerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.JetPlayer"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.JetPlayerEvents.#ctor(Android.Media.JetPlayer)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.JetPlayer"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.JetPlayerEvents.JetEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.JetPlayer.JetEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.JetPlayerEvents.JetNumQueuedSegmentUpdate">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.JetPlayer.JetNumQueuedSegmentUpdate"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.JetPlayerEvents.JetPauseUpdate">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.JetPlayer.JetPauseUpdate"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.JetPlayerEvents.JetUserIdUpdate">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.JetPlayer.JetUserIdUpdate"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.MediaDrmEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.MediaDrm"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.MediaDrmEvents.#ctor(Android.Media.MediaDrm)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.MediaDrm"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.MediaDrmEvents.MediaDrmEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaDrm.MediaDrmEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.MediaPlayerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.MediaPlayer"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.MediaPlayerEvents.#ctor(Android.Media.MediaPlayer)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.MediaPlayer"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.BufferingUpdate">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.BufferingUpdate"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.Completion">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.Completion"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.DrmInfoEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.DrmInfoEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.DrmPrepared">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.DrmPrepared"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.Error">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.Error"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.Info">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.Info"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.MediaTimeDiscontinuity">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.MediaTimeDiscontinuity"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.Prepared">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.Prepared"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.SeekComplete">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.SeekComplete"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.SubtitleData">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.SubtitleData"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.TimedMetaDataAvailable">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.TimedMetaDataAvailable"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.TimedText">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.TimedText"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaPlayerEvents.VideoSizeChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaPlayer.VideoSizeChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.MediaRecorderEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.MediaRecorder"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.MediaRecorderEvents.#ctor(Android.Media.MediaRecorder)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.MediaRecorder"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.MediaRecorderEvents.Error">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaRecorder.Error"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.MediaRecorderEvents.Info">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.MediaRecorder.Info"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.RemoteControlClientEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.RemoteControlClient"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.RemoteControlClientEvents.#ctor(Android.Media.RemoteControlClient)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.RemoteControlClient"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.RemoteControlClientEvents.MetadataUpdate">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.RemoteControlClient.MetadataUpdate"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.RemoteControlClientEvents.PlaybackPositionUpdate">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.RemoteControlClient.PlaybackPositionUpdate"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.SoundPoolEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.SoundPool"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.SoundPoolEvents.#ctor(Android.Media.SoundPool)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.SoundPool"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.SoundPoolEvents.LoadComplete">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.SoundPool.LoadComplete"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.Audiofx.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Media.Audiofx"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.EventExtensions.Events(Android.Media.Audiofx.AudioEffect)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.Audiofx.AudioEffect"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.EventExtensions.Events(Android.Media.Audiofx.BassBoost)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.Audiofx.BassBoost"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.EventExtensions.Events(Android.Media.Audiofx.EnvironmentalReverb)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.Audiofx.EnvironmentalReverb"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.EventExtensions.Events(Android.Media.Audiofx.Equalizer)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.Audiofx.Equalizer"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.EventExtensions.Events(Android.Media.Audiofx.PresetReverb)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.Audiofx.PresetReverb"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.EventExtensions.Events(Android.Media.Audiofx.Virtualizer)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.Audiofx.Virtualizer"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Media.Audiofx.AudioEffectEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.Audiofx.AudioEffect"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.AudioEffectEvents.#ctor(Android.Media.Audiofx.AudioEffect)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.Audiofx.AudioEffect"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.Audiofx.AudioEffectEvents.ControlStatus">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.Audiofx.AudioEffect.ControlStatus"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Media.Audiofx.AudioEffectEvents.EnableStatus">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.Audiofx.AudioEffect.EnableStatus"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.Audiofx.BassBoostEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.Audiofx.BassBoost"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.BassBoostEvents.#ctor(Android.Media.Audiofx.BassBoost)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.Audiofx.BassBoost"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.Audiofx.BassBoostEvents.Parameter">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.Audiofx.BassBoost.Parameter"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.Audiofx.EnvironmentalReverbEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.Audiofx.EnvironmentalReverb"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.EnvironmentalReverbEvents.#ctor(Android.Media.Audiofx.EnvironmentalReverb)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.Audiofx.EnvironmentalReverb"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.Audiofx.EnvironmentalReverbEvents.Parameter">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.Audiofx.EnvironmentalReverb.Parameter"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.Audiofx.EqualizerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.Audiofx.Equalizer"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.EqualizerEvents.#ctor(Android.Media.Audiofx.Equalizer)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.Audiofx.Equalizer"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.Audiofx.EqualizerEvents.Parameter">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.Audiofx.Equalizer.Parameter"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.Audiofx.PresetReverbEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.Audiofx.PresetReverb"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.PresetReverbEvents.#ctor(Android.Media.Audiofx.PresetReverb)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.Audiofx.PresetReverb"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.Audiofx.PresetReverbEvents.Parameter">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.Audiofx.PresetReverb.Parameter"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.Audiofx.VirtualizerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.Audiofx.Virtualizer"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Audiofx.VirtualizerEvents.#ctor(Android.Media.Audiofx.Virtualizer)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.Audiofx.Virtualizer"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.Audiofx.VirtualizerEvents.Parameter">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.Audiofx.Virtualizer.Parameter"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.Effect.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Media.Effect"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Effect.EventExtensions.Events(Android.Media.Effect.Effect)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.Effect.Effect"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Media.Effect.EffectEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.Effect.Effect"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.Effect.EffectEvents.#ctor(Android.Media.Effect.Effect)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.Effect.Effect"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.Effect.EffectEvents.Update">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.Effect.Effect.Update"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Media.TV.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Media.TV"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Media.TV.EventExtensions.Events(Android.Media.TV.TvView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Media.TV.TvView"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Media.TV.TvViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Media.TV.TvView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Media.TV.TvViewEvents.#ctor(Android.Media.TV.TvView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Media.TV.TvView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Media.TV.TvViewEvents.UnhandledInputEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Media.TV.TvView.UnhandledInputEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Net.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Net"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Net.EventExtensions.Events(Android.Net.ConnectivityManager)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Net.ConnectivityManager"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Net.ConnectivityManagerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Net.ConnectivityManager"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Net.ConnectivityManagerEvents.#ctor(Android.Net.ConnectivityManager)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Net.ConnectivityManager"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Net.ConnectivityManagerEvents.DefaultNetworkActive">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Net.ConnectivityManager.DefaultNetworkActive"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.OS.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.OS"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.OS.EventExtensions.Events(Android.OS.CancellationSignal)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.OS.CancellationSignal"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.OS.CancellationSignalEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.OS.CancellationSignal"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.OS.CancellationSignalEvents.#ctor(Android.OS.CancellationSignal)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.OS.CancellationSignal"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.OS.CancellationSignalEvents.CancelEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.OS.CancellationSignal.CancelEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Preferences.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Preferences"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Preferences.EventExtensions.Events(Android.Preferences.Preference)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Preferences.Preference"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Preferences.PreferenceEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Preferences.Preference"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Preferences.PreferenceEvents.#ctor(Android.Preferences.Preference)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Preferences.Preference"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Preferences.PreferenceEvents.PreferenceChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Preferences.Preference.PreferenceChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Preferences.PreferenceEvents.PreferenceClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Preferences.Preference.PreferenceClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Renderscripts.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Renderscripts"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Renderscripts.EventExtensions.Events(Android.Renderscripts.Allocation)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Renderscripts.Allocation"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Renderscripts.AllocationEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Renderscripts.Allocation"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Renderscripts.AllocationEvents.#ctor(Android.Renderscripts.Allocation)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Renderscripts.Allocation"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Renderscripts.AllocationEvents.BufferAvailable">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Renderscripts.Allocation.BufferAvailable"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Sax.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Sax"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Sax.EventExtensions.Events(Android.Sax.Element)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Sax.Element"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Sax.ElementEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Sax.Element"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Sax.ElementEvents.#ctor(Android.Sax.Element)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Sax.Element"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Sax.ElementEvents.EndElement">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Sax.Element.EndElement"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Sax.ElementEvents.EndTextElement">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Sax.Element.EndTextElement"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Sax.ElementEvents.StartElement">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Sax.Element.StartElement"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Speech.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Speech"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Speech.EventExtensions.Events(Android.Speech.SpeechRecognizer)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Speech.SpeechRecognizer"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Speech.SpeechRecognizerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Speech.SpeechRecognizer"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Speech.SpeechRecognizerEvents.#ctor(Android.Speech.SpeechRecognizer)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Speech.SpeechRecognizer"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Speech.SpeechRecognizerEvents.BeginningOfSpeech">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Speech.SpeechRecognizer.BeginningOfSpeech"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Speech.SpeechRecognizerEvents.BufferReceived">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Speech.SpeechRecognizer.BufferReceived"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Speech.SpeechRecognizerEvents.EndOfSpeech">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Speech.SpeechRecognizer.EndOfSpeech"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Speech.SpeechRecognizerEvents.Error">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Speech.SpeechRecognizer.Error"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Speech.SpeechRecognizerEvents.Event">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Speech.SpeechRecognizer.Event"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Speech.SpeechRecognizerEvents.PartialResults">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Speech.SpeechRecognizer.PartialResults"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Speech.SpeechRecognizerEvents.ReadyForSpeech">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Speech.SpeechRecognizer.ReadyForSpeech"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Speech.SpeechRecognizerEvents.Results">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Speech.SpeechRecognizer.Results"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Speech.SpeechRecognizerEvents.RmsChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Speech.SpeechRecognizer.RmsChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Views.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Views"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Views.EventExtensions.Events(Android.Views.ActionProvider)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Views.ActionProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Views.EventExtensions.Events(Android.Views.GestureDetector)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Views.GestureDetector"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Views.EventExtensions.Events(Android.Views.TextureView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Views.TextureView"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Views.EventExtensions.Events(Android.Views.View)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Views.View"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Views.EventExtensions.Events(Android.Views.ViewGroup)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Views.ViewGroup"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Views.EventExtensions.Events(Android.Views.ViewStub)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Views.ViewStub"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Views.EventExtensions.Events(Android.Views.ViewTreeObserver)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Views.ViewTreeObserver"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Views.EventExtensions.Events(Android.Views.Window)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Views.Window"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Views.ActionProviderEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Views.ActionProvider"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Views.ActionProviderEvents.#ctor(Android.Views.ActionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Views.ActionProvider"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Views.ActionProviderEvents.Visibility">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ActionProvider.Visibility"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Views.GestureDetectorEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Views.GestureDetector"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Views.GestureDetectorEvents.#ctor(Android.Views.GestureDetector)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Views.GestureDetector"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Views.GestureDetectorEvents.ContextClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.GestureDetector.ContextClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.GestureDetectorEvents.DoubleTap">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.GestureDetector.DoubleTap"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.GestureDetectorEvents.DoubleTapEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.GestureDetector.DoubleTapEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.GestureDetectorEvents.SingleTapConfirmed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.GestureDetector.SingleTapConfirmed"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Views.TextureViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Views.TextureView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Views.TextureViewEvents.#ctor(Android.Views.TextureView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Views.TextureView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Views.TextureViewEvents.SurfaceTextureAvailable">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.TextureView.SurfaceTextureAvailable"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.TextureViewEvents.SurfaceTextureDestroyed">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.TextureView.SurfaceTextureDestroyed"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.TextureViewEvents.SurfaceTextureSizeChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.TextureView.SurfaceTextureSizeChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.TextureViewEvents.SurfaceTextureUpdated">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.TextureView.SurfaceTextureUpdated"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Views.ViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Views.View"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Views.ViewEvents.#ctor(Android.Views.View)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Views.View"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Views.ViewEvents.CapturedPointer">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.CapturedPointer"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.Click">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.Click"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.ContextClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.ContextClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.ContextMenuCreated">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.ContextMenuCreated"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.Drag">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.Drag"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.FocusChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.FocusChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.GenericMotion">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.GenericMotion"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.Hover">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.Hover"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.KeyPress">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.KeyPress"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.LayoutChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.LayoutChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.LongClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.LongClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.ScrollChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.ScrollChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.SystemUiVisibilityChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.SystemUiVisibilityChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.Touch">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.Touch"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.UnhandledKeyEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.UnhandledKeyEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.ViewAttachedToWindow">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.ViewAttachedToWindow"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewEvents.ViewDetachedFromWindow">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.View.ViewDetachedFromWindow"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Views.ViewGroupEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Views.ViewGroup"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Views.ViewGroupEvents.#ctor(Android.Views.ViewGroup)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Views.ViewGroup"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Views.ViewGroupEvents.AnimationEnd">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewGroup.AnimationEnd"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewGroupEvents.AnimationRepeat">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewGroup.AnimationRepeat"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewGroupEvents.AnimationStart">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewGroup.AnimationStart"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewGroupEvents.ChildViewAdded">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewGroup.ChildViewAdded"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewGroupEvents.ChildViewRemoved">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewGroup.ChildViewRemoved"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Views.ViewStubEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Views.ViewStub"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Views.ViewStubEvents.#ctor(Android.Views.ViewStub)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Views.ViewStub"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Views.ViewStubEvents.InflateEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewStub.InflateEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Views.ViewTreeObserverEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Views.ViewTreeObserver"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Views.ViewTreeObserverEvents.#ctor(Android.Views.ViewTreeObserver)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Views.ViewTreeObserver"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Views.ViewTreeObserverEvents.Draw">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewTreeObserver.Draw"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewTreeObserverEvents.GlobalFocusChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewTreeObserver.GlobalFocusChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewTreeObserverEvents.GlobalLayout">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewTreeObserver.GlobalLayout"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewTreeObserverEvents.PreDraw">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewTreeObserver.PreDraw"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewTreeObserverEvents.ScrollChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewTreeObserver.ScrollChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewTreeObserverEvents.TouchModeChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewTreeObserver.TouchModeChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewTreeObserverEvents.WindowAttached">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewTreeObserver.WindowAttached"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewTreeObserverEvents.WindowDetached">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewTreeObserver.WindowDetached"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.ViewTreeObserverEvents.WindowFocusChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.ViewTreeObserver.WindowFocusChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Views.WindowEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Views.Window"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Views.WindowEvents.#ctor(Android.Views.Window)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Views.Window"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Views.WindowEvents.RestrictedCaptionArea">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.Window.RestrictedCaptionArea"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Views.Animations.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Views.Animations"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Views.Animations.EventExtensions.Events(Android.Views.Animations.Animation)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Views.Animations.Animation"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Views.Animations.AnimationEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Views.Animations.Animation"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Views.Animations.AnimationEvents.#ctor(Android.Views.Animations.Animation)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Views.Animations.Animation"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Views.Animations.AnimationEvents.AnimationEnd">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.Animations.Animation.AnimationEnd"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.Animations.AnimationEvents.AnimationRepeat">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.Animations.Animation.AnimationRepeat"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Views.Animations.AnimationEvents.AnimationStart">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Views.Animations.Animation.AnimationStart"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Views.AccessibilityDelegateRx">
+            <summary>
+            Wraps delegates events from <see cref = "T:Android.Views.View.AccessibilityDelegate"/> into Observables.
+            </summary>
+        </member>
+        <member name="P:Android.Views.AccessibilityDelegateRx.AddExtraDataToAccessibilityNodeInfoObs">
+            <summary>
+            Gets an observable which signals when the <see cref = "M:Android.Views.View.AccessibilityDelegate.AddExtraDataToAccessibilityNodeInfo(Android.Views.View,Android.Views.Accessibility.AccessibilityNodeInfo,System.String,Android.OS.Bundle)"/> method is invoked.
+            </summary>
+        </member>
+        <member name="P:Android.Views.AccessibilityDelegateRx.OnInitializeAccessibilityEventObs">
+            <summary>
+            Gets an observable which signals when the <see cref = "M:Android.Views.View.AccessibilityDelegate.OnInitializeAccessibilityEvent(Android.Views.View,Android.Views.Accessibility.AccessibilityEvent)"/> method is invoked.
+            </summary>
+        </member>
+        <member name="P:Android.Views.AccessibilityDelegateRx.OnInitializeAccessibilityNodeInfoObs">
+            <summary>
+            Gets an observable which signals when the <see cref = "M:Android.Views.View.AccessibilityDelegate.OnInitializeAccessibilityNodeInfo(Android.Views.View,Android.Views.Accessibility.AccessibilityNodeInfo)"/> method is invoked.
+            </summary>
+        </member>
+        <member name="P:Android.Views.AccessibilityDelegateRx.OnPopulateAccessibilityEventObs">
+            <summary>
+            Gets an observable which signals when the <see cref = "M:Android.Views.View.AccessibilityDelegate.OnPopulateAccessibilityEvent(Android.Views.View,Android.Views.Accessibility.AccessibilityEvent)"/> method is invoked.
+            </summary>
+        </member>
+        <member name="P:Android.Views.AccessibilityDelegateRx.SendAccessibilityEventObs">
+            <summary>
+            Gets an observable which signals when the <see cref = "M:Android.Views.View.AccessibilityDelegate.SendAccessibilityEvent(Android.Views.View,Android.Views.Accessibility.EventTypes)"/> method is invoked.
+            </summary>
+        </member>
+        <member name="P:Android.Views.AccessibilityDelegateRx.SendAccessibilityEventUncheckedObs">
+            <summary>
+            Gets an observable which signals when the <see cref = "M:Android.Views.View.AccessibilityDelegate.SendAccessibilityEventUnchecked(Android.Views.View,Android.Views.Accessibility.AccessibilityEvent)"/> method is invoked.
+            </summary>
+        </member>
+        <member name="M:Android.Views.AccessibilityDelegateRx.AddExtraDataToAccessibilityNodeInfo(Android.Views.View,Android.Views.Accessibility.AccessibilityNodeInfo,System.String,Android.OS.Bundle)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Android.Views.AccessibilityDelegateRx.OnInitializeAccessibilityEvent(Android.Views.View,Android.Views.Accessibility.AccessibilityEvent)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Android.Views.AccessibilityDelegateRx.OnInitializeAccessibilityNodeInfo(Android.Views.View,Android.Views.Accessibility.AccessibilityNodeInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Android.Views.AccessibilityDelegateRx.OnPopulateAccessibilityEvent(Android.Views.View,Android.Views.Accessibility.AccessibilityEvent)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Android.Views.AccessibilityDelegateRx.SendAccessibilityEvent(Android.Views.View,Android.Views.Accessibility.EventTypes)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Android.Views.AccessibilityDelegateRx.SendAccessibilityEventUnchecked(Android.Views.View,Android.Views.Accessibility.AccessibilityEvent)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Android.Webkit.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Webkit"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Webkit.EventExtensions.Events(Android.Webkit.WebView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Webkit.WebView"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Webkit.WebViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Webkit.WebView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Webkit.WebViewEvents.#ctor(Android.Webkit.WebView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Webkit.WebView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Webkit.WebViewEvents.Download">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Webkit.WebView.Download"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Webkit.WebViewEvents.Find">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Webkit.WebView.Find"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Webkit.WebViewEvents.Picture">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Webkit.WebView.Picture"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Android.Widget"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.AbsListView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.AbsListView"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.ActionMenuView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.ActionMenuView"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.AdapterView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.AdapterView"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.AutoCompleteTextView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.AutoCompleteTextView"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.CalendarView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.CalendarView"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.Chronometer)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.Chronometer"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.CompoundButton)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.CompoundButton"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.DatePicker)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.DatePicker"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.ExpandableListView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.ExpandableListView"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.ListPopupWindow)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.ListPopupWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.MediaController)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.MediaController"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.NumberPicker)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.NumberPicker"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.PopupMenu)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.PopupMenu"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.PopupWindow)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.PopupWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.RadioGroup)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.RadioGroup"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.RatingBar)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.RatingBar"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.SearchView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.SearchView"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.SeekBar)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.SeekBar"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.ShareActionProvider)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.ShareActionProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.SlidingDrawer)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.SlidingDrawer"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.TabHost)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.TabHost"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.TextView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.TextView"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.TimePicker)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.TimePicker"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.Toolbar)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.Toolbar"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.VideoView)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.VideoView"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.ZoomButtonsController)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.ZoomButtonsController"/> class.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.EventExtensions.Events(Android.Widget.ZoomControls)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Android.Widget.ZoomControls"/> class.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.AbsListViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.AbsListView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.AbsListViewEvents.#ctor(Android.Widget.AbsListView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.AbsListView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.AbsListViewEvents.Recycler">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AbsListView.Recycler"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.AbsListViewEvents.Scroll">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AbsListView.Scroll"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.AbsListViewEvents.ScrollStateChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AbsListView.ScrollStateChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.ActionMenuViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.ActionMenuView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.ActionMenuViewEvents.#ctor(Android.Widget.ActionMenuView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.ActionMenuView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.ActionMenuViewEvents.MenuItemClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ActionMenuView.MenuItemClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.AdapterViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.AdapterView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.AdapterViewEvents.#ctor(Android.Widget.AdapterView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.AdapterView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.AdapterViewEvents.ItemClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AdapterView.ItemClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.AdapterViewEvents.ItemLongClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AdapterView.ItemLongClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.AdapterViewEvents.ItemSelected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AdapterView.ItemSelected"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.AdapterViewEvents.ItemSelectionCleared">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AdapterView.ItemSelectionCleared"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.AdapterViewEvents.NothingSelected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AdapterView.NothingSelected"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.AutoCompleteTextViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.AutoCompleteTextView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.AutoCompleteTextViewEvents.#ctor(Android.Widget.AutoCompleteTextView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.AutoCompleteTextView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.AutoCompleteTextViewEvents.Dismiss">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AutoCompleteTextView.Dismiss"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.AutoCompleteTextViewEvents.ItemClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AutoCompleteTextView.ItemClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.AutoCompleteTextViewEvents.ItemSelected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AutoCompleteTextView.ItemSelected"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.AutoCompleteTextViewEvents.ItemSelectionCleared">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AutoCompleteTextView.ItemSelectionCleared"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.AutoCompleteTextViewEvents.NothingSelected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.AutoCompleteTextView.NothingSelected"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.CalendarViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.CalendarView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.CalendarViewEvents.#ctor(Android.Widget.CalendarView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.CalendarView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.CalendarViewEvents.DateChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.CalendarView.DateChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.ChronometerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.Chronometer"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.ChronometerEvents.#ctor(Android.Widget.Chronometer)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.Chronometer"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.ChronometerEvents.ChronometerTick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.Chronometer.ChronometerTick"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.CompoundButtonEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.CompoundButton"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.CompoundButtonEvents.#ctor(Android.Widget.CompoundButton)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.CompoundButton"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.CompoundButtonEvents.CheckedChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.CompoundButton.CheckedChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.DatePickerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.DatePicker"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.DatePickerEvents.#ctor(Android.Widget.DatePicker)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.DatePicker"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.DatePickerEvents.DateChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.DatePicker.DateChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.ExpandableListViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.ExpandableListView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.ExpandableListViewEvents.#ctor(Android.Widget.ExpandableListView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.ExpandableListView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.ExpandableListViewEvents.ChildClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ExpandableListView.ChildClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.ExpandableListViewEvents.GroupClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ExpandableListView.GroupClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.ExpandableListViewEvents.GroupCollapse">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ExpandableListView.GroupCollapse"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.ExpandableListViewEvents.GroupExpand">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ExpandableListView.GroupExpand"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.ListPopupWindowEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.ListPopupWindow"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.ListPopupWindowEvents.#ctor(Android.Widget.ListPopupWindow)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.ListPopupWindow"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.ListPopupWindowEvents.DismissEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ListPopupWindow.DismissEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.ListPopupWindowEvents.ItemClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ListPopupWindow.ItemClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.ListPopupWindowEvents.ItemSelected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ListPopupWindow.ItemSelected"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.ListPopupWindowEvents.NothingSelected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ListPopupWindow.NothingSelected"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.MediaControllerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.MediaController"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.MediaControllerEvents.#ctor(Android.Widget.MediaController)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.MediaController"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.MediaControllerEvents.NextClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.MediaController.NextClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.MediaControllerEvents.PreviousClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.MediaController.PreviousClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.NumberPickerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.NumberPicker"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.NumberPickerEvents.#ctor(Android.Widget.NumberPicker)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.NumberPicker"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.NumberPickerEvents.Scroll">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.NumberPicker.Scroll"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.NumberPickerEvents.ValueChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.NumberPicker.ValueChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.PopupMenuEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.PopupMenu"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.PopupMenuEvents.#ctor(Android.Widget.PopupMenu)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.PopupMenu"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.PopupMenuEvents.DismissEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.PopupMenu.DismissEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.PopupMenuEvents.MenuItemClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.PopupMenu.MenuItemClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.PopupWindowEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.PopupWindow"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.PopupWindowEvents.#ctor(Android.Widget.PopupWindow)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.PopupWindow"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.PopupWindowEvents.DismissEvent">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.PopupWindow.DismissEvent"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.PopupWindowEvents.TouchIntercepted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.PopupWindow.TouchIntercepted"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.RadioGroupEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.RadioGroup"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.RadioGroupEvents.#ctor(Android.Widget.RadioGroup)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.RadioGroup"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.RadioGroupEvents.CheckedChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.RadioGroup.CheckedChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.RatingBarEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.RatingBar"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.RatingBarEvents.#ctor(Android.Widget.RatingBar)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.RatingBar"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.RatingBarEvents.RatingBarChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.RatingBar.RatingBarChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.SearchViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.SearchView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.SearchViewEvents.#ctor(Android.Widget.SearchView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.SearchView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.SearchViewEvents.Close">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SearchView.Close"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SearchViewEvents.QueryTextChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SearchView.QueryTextChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SearchViewEvents.QueryTextFocusChange">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SearchView.QueryTextFocusChange"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SearchViewEvents.QueryTextSubmit">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SearchView.QueryTextSubmit"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SearchViewEvents.SearchClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SearchView.SearchClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SearchViewEvents.SuggestionClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SearchView.SuggestionClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SearchViewEvents.SuggestionSelect">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SearchView.SuggestionSelect"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.SeekBarEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.SeekBar"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.SeekBarEvents.#ctor(Android.Widget.SeekBar)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.SeekBar"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.SeekBarEvents.ProgressChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SeekBar.ProgressChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SeekBarEvents.StartTrackingTouch">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SeekBar.StartTrackingTouch"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SeekBarEvents.StopTrackingTouch">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SeekBar.StopTrackingTouch"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.ShareActionProviderEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.ShareActionProvider"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.ShareActionProviderEvents.#ctor(Android.Widget.ShareActionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.ShareActionProvider"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.ShareActionProviderEvents.ShareTargetSelected">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ShareActionProvider.ShareTargetSelected"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.SlidingDrawerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.SlidingDrawer"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.SlidingDrawerEvents.#ctor(Android.Widget.SlidingDrawer)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.SlidingDrawer"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.SlidingDrawerEvents.DrawerClose">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SlidingDrawer.DrawerClose"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SlidingDrawerEvents.DrawerOpen">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SlidingDrawer.DrawerOpen"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SlidingDrawerEvents.ScrollEnded">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SlidingDrawer.ScrollEnded"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.SlidingDrawerEvents.ScrollStarted">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.SlidingDrawer.ScrollStarted"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.TabHostEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.TabHost"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.TabHostEvents.#ctor(Android.Widget.TabHost)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.TabHost"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.TabHostEvents.TabChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.TabHost.TabChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.TextViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.TextView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.TextViewEvents.#ctor(Android.Widget.TextView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.TextView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.TextViewEvents.AfterTextChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.TextView.AfterTextChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.TextViewEvents.BeforeTextChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.TextView.BeforeTextChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.TextViewEvents.EditorAction">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.TextView.EditorAction"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.TextViewEvents.TextChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.TextView.TextChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.TimePickerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.TimePicker"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.TimePickerEvents.#ctor(Android.Widget.TimePicker)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.TimePicker"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.TimePickerEvents.TimeChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.TimePicker.TimeChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.ToolbarEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.Toolbar"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.ToolbarEvents.#ctor(Android.Widget.Toolbar)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.Toolbar"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.ToolbarEvents.MenuItemClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.Toolbar.MenuItemClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.ToolbarEvents.NavigationOnClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.Toolbar.NavigationOnClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.VideoViewEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.VideoView"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.VideoViewEvents.#ctor(Android.Widget.VideoView)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.VideoView"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.VideoViewEvents.Completion">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.VideoView.Completion"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.VideoViewEvents.Error">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.VideoView.Error"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.VideoViewEvents.Info">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.VideoView.Info"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.VideoViewEvents.Prepared">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.VideoView.Prepared"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.ZoomButtonsControllerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.ZoomButtonsController"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.ZoomButtonsControllerEvents.#ctor(Android.Widget.ZoomButtonsController)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.ZoomButtonsController"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.ZoomButtonsControllerEvents.VisibilityChanged">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ZoomButtonsController.VisibilityChanged"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.ZoomButtonsControllerEvents.Zoom">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ZoomButtonsController.Zoom"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Widget.ZoomControlsEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Android.Widget.ZoomControls"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Android.Widget.ZoomControlsEvents.#ctor(Android.Widget.ZoomControls)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Android.Widget.ZoomControls"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Android.Widget.ZoomControlsEvents.ZoomInClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ZoomControls.ZoomInClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Android.Widget.ZoomControlsEvents.ZoomOutClick">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Widget.ZoomControls.ZoomOutClick"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Android.Runtime.Events">
+            <summary>
+            A class that contains extension methods to wrap events contained within static classes within the <see cref = "N:Android.Runtime"/> namespace.
+            </summary>
+        </member>
+        <member name="P:Android.Runtime.Events.AndroidEnvironmentUnhandledExceptionRaiser">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Android.Runtime.AndroidEnvironment.UnhandledExceptionRaiser"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Javax.Xml.Transform.EventExtensions">
+            <summary>
+            A class that contains extension methods to wrap events for classes contained within the <see cref = "N:Javax.Xml.Transform"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Javax.Xml.Transform.EventExtensions.Events(Javax.Xml.Transform.Transformer)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Javax.Xml.Transform.Transformer"/> class.
+            </summary>
+        </member>
+        <member name="M:Javax.Xml.Transform.EventExtensions.Events(Javax.Xml.Transform.TransformerFactory)">
+            <summary>
+            A wrapper class which wraps all the events contained within the <see cref = "T:Javax.Xml.Transform.TransformerFactory"/> class.
+            </summary>
+        </member>
+        <member name="T:Javax.Xml.Transform.TransformerEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Javax.Xml.Transform.Transformer"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Javax.Xml.Transform.TransformerEvents.#ctor(Javax.Xml.Transform.Transformer)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Javax.Xml.Transform.Transformer"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Javax.Xml.Transform.TransformerEvents.Error">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Javax.Xml.Transform.Transformer.Error"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Javax.Xml.Transform.TransformerEvents.FatalError">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Javax.Xml.Transform.Transformer.FatalError"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Javax.Xml.Transform.TransformerEvents.Warning">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Javax.Xml.Transform.Transformer.Warning"/> event triggers.
+            </summary>
+        </member>
+        <member name="T:Javax.Xml.Transform.TransformerFactoryEvents">
+            <summary>
+            A class which wraps the events contained within the <see cref = "T:Javax.Xml.Transform.TransformerFactory"/> class as observables.
+            </summary>
+        </member>
+        <member name="M:Javax.Xml.Transform.TransformerFactoryEvents.#ctor(Javax.Xml.Transform.TransformerFactory)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:Javax.Xml.Transform.TransformerFactory"/> class.
+            </summary>
+            <param name = "data">The class that is being wrapped.</param>
+        </member>
+        <member name="P:Javax.Xml.Transform.TransformerFactoryEvents.Error">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Javax.Xml.Transform.TransformerFactory.Error"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Javax.Xml.Transform.TransformerFactoryEvents.FatalError">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Javax.Xml.Transform.TransformerFactory.FatalError"/> event triggers.
+            </summary>
+        </member>
+        <member name="P:Javax.Xml.Transform.TransformerFactoryEvents.Warning">
+            <summary>
+            Gets an observable which signals when the <see cref = "E:Javax.Xml.Transform.TransformerFactory.Warning"/> event triggers.
+            </summary>
+        </member>
+    </members>
+</doc>
