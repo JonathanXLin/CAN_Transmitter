@@ -51,10 +51,7 @@ namespace pcCANInterface
                     table.Columns[i].Background = Brushes.LightSteelBlue;
             }
             table.RowGroups.Add(new TableRowGroup());
-            for(int i = 0; i < serialCAN.MAXMESSAGES; i++)
-            {
-                table.RowGroups[0].Rows.Add(new TableRow());
-            }
+            table.RowGroups[0].Rows.Add(new TableRow());
             TableRow currentRow = table.RowGroups[0].Rows[0];
             currentRow.Background = Brushes.Silver;
             currentRow.FontSize = 10;
@@ -62,6 +59,18 @@ namespace pcCANInterface
             currentRow.Cells.Add(new TableCell(new Paragraph(new Run("Time"))));
             currentRow.Cells.Add(new TableCell(new Paragraph(new Run("Id"))));
             currentRow.Cells.Add(new TableCell(new Paragraph(new Run("Message"))));
+        }
+
+        public void createCANView(canList list, TableRowCollection rows)
+        {
+            for(int i = 0; i < canList.LISTLENGTH; i++)
+            {
+                TableRow newRow = new TableRow();
+                rows.Add(newRow);
+
+                Binding binding = new Binding("Text");
+                binding.Source = list.
+            }
         }
 
     }

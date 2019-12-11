@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pcCANInterface
 {
-    class canReadList : canList
+    public class canReadList : canList
     {
     }
 }

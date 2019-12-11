@@ -8,7 +8,7 @@ namespace pcCANInterface
 {
     
 
-    abstract class canList
+    public abstract class canList
     {
         public static int LISTLENGTH = 32;
     }

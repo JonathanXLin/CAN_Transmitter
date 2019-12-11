@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO.Ports;
 using ReactiveUI;
+using System.Threading;
 
 namespace pcCANInterface
 {
@@ -18,8 +19,8 @@ namespace pcCANInterface
         }
 
         private static int baud = 256000;
-        private static int MESSAGESIZE = 8;
         public SerialPort port { get; set; }
+        public static int MAXMESSAGES = 10;
 
         private int readId;
         public int ReadId
@@ -83,6 +84,8 @@ namespace pcCANInterface
                     return;
                 }
                 dbgStr.setMessage(debug.connectGood);
+                //start a task to check the buffer
+                Timer timer = new Timer(readMessages, dbgStr, TimeSpan.FromSeconds(0), TimeSpan.FromMilliseconds(0.1));
      
             }
             else
@@ -93,34 +96,39 @@ namespace pcCANInterface
 
         }
 
-        private void readMessages(debug dbgStr)
+        private void readMessages(object dbgStr)
         {
-            string msg;
-            if(dbgStr != null)
+            var dbg = dbgStr as debug;
+            byte[] rawMsg = new byte[canMsg.RAWNUMBYTES];
+            if (dbgStr != null)
             {
                 try
                 {
-                    msg = port.ReadLine();
+                    port.Read(rawMsg, 0, canMsg.RAWNUMBYTES);
                 }
                 catch (TimeoutException ex)
                 {
                     //this just means there was no message, it's not a problem
                     return;
                 }
-                catch(InvalidOperationException ex)
+                catch (InvalidOperationException ex)
                 {
-                    dbgStr.setMessage(debug.triedToReadClosedPort);
+                    dbg.setMessage(debug.triedToReadClosedPort);
                     return;
                 }
                 //got a good message, no exceptions
-                parseCANId(msg);
-                parseCANMsg(msg);
+                //don't show it in the debug textbox since it's so often
+                //just show it on the read section
+                rawCANMsg msg = (rawCANMsg)rawMsg;
+
+               
             }
             else
             {
                 Console.WriteLine("bad debug string");
             }
         }
+
         void parseCANId(string message)
         {
 
