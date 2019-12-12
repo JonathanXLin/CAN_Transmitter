@@ -61,7 +61,7 @@
                 <TextBlock Grid.Row="0" FontWeight="Bold" 
                         Text="Write" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
-                <FlowDocumentScrollViewer Name="writeViewer" Grid.Row="1"/>
+                <DataGrid x:Name="writeTable" Grid.Row="1" ItemsSource="{Binding WriteList.Messages}" AutoGenerateColumns="true" AutoGeneratingColumn="DataGrid_OnAutoGeneratingColumn" ColumnWidth="*"/>
 
             </Grid>
 

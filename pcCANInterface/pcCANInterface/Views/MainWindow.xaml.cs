@@ -25,53 +25,42 @@ namespace pcCANInterface
         public Main()
         {
             InitializeComponent();
-            DataContext = new ViewModelMain();
+            DataContext = new ViewModelMain(this);
+
+            //hide reactive properties from table
             
-            addTable(readViewer);
-            addTable(writeViewer);
 
-            Table writeTable = new Table();
+            //addTable(readViewer);
+            //addTable(writeViewer);
+
+            //Table writeTable = new Table();
         }
 
-        public void addTable(FlowDocumentScrollViewer parent)
+        //private void createMsgGrid(Grid parent, canList list)
+        //{
+        //    DataGrid dataGrid = new DataGrid();
+        //    Grid.SetRow(dataGrid, 1);
+        //    parent.Children.Add(dataGrid);
+        //    var data = list;
+        //    dataGrid.AutoGenerateColumns = false;
+        //    for(int i = 0; i < canMsg.NUMATTRIBUTES; i++)
+        //    {
+        //        var col = new DataGridColumn();
+        //        var binding = new Binding 
+        //    }
+        //}
+
+        //format datagrid
+        private void DataGrid_OnAutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
-            FlowDocument flowDoc = new FlowDocument();
-            parent.Document = flowDoc;
-            Table table = new Table();
-            table.CellSpacing = 10;
-            table.Background = Brushes.White;
-            flowDoc.Blocks.Add(table);
-            table.SetValue(Grid.RowProperty, 1);
-            for (int i = 0; i < canMsg.NUMATTRIBUTES; i++)
+            if (e.PropertyName == "Changing" || e.PropertyName=="Changed" || e.PropertyName=="ThrownExceptions")
             {
-                table.Columns.Add(new TableColumn());
-                if (i % 2 == 0)
-                    table.Columns[i].Background = Brushes.Beige;
-                else
-                    table.Columns[i].Background = Brushes.LightSteelBlue;
+                e.Column = null;
             }
-            table.RowGroups.Add(new TableRowGroup());
-            table.RowGroups[0].Rows.Add(new TableRow());
-            TableRow currentRow = table.RowGroups[0].Rows[0];
-            currentRow.Background = Brushes.Silver;
-            currentRow.FontSize = 10;
-            currentRow.FontWeight = System.Windows.FontWeights.Bold;
-            currentRow.Cells.Add(new TableCell(new Paragraph(new Run("Time"))));
-            currentRow.Cells.Add(new TableCell(new Paragraph(new Run("Id"))));
-            currentRow.Cells.Add(new TableCell(new Paragraph(new Run("Message"))));
-        }
-
-        public void createCANView(canList list, TableRowCollection rows)
-        {
-            for(int i = 0; i < canList.LISTLENGTH; i++)
+            if(e.PropertyName == "Time")
             {
-                TableRow newRow = new TableRow();
-                rows.Add(newRow);
-
-                Binding binding = new Binding("Text");
-                binding.Source = list.
+                (e.Column as DataGridTextColumn).Binding.StringFormat = "HH:mm:ss:ff";
             }
         }
-
     }
 }
