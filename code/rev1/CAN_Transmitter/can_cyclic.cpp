@@ -127,17 +127,21 @@ void CAN_message_cyclic::send_CAN() {
       //Serial.print("SENT AND RECEIVED, message id: ");
       //Serial.print(id, HEX);
       //Serial.println();
+      
+      last_can_received = 1;
     }
     else
     {
       //Serial.print("ERROR SENDING MESSAGE, message id: ");
       //Serial.print(id, HEX);
       //Serial.println();
+      
+      last_can_received = 0;
     }
 
     millis_next = millis() + period; // Update millis_next
 
-    if (!led_flag)
+    if (!led_flag && last_can_received)
     {
       digitalWrite(led_tx, HIGH);
       led_flag = true;
