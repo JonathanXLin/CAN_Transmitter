@@ -61,7 +61,7 @@
                 <TextBlock Grid.Row="0" FontWeight="Bold" 
                         Text="Write" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
-                <DataGrid x:Name="writeTable" Grid.Row="1" ItemsSource="{Binding WriteList.Messages}" AutoGenerateColumns="true" AutoGeneratingColumn="DataGrid_OnAutoGeneratingColumn" ColumnWidth="*"/>
+                <DataGrid x:Name="writeTable" Grid.Row="1" ItemsSource="{Binding serial.WriteList.Messages}" AutoGenerateColumns="true" AutoGeneratingColumn="DataGrid_OnAutoGeneratingColumn" ColumnWidth="*"/>
 
             </Grid>
 
@@ -74,7 +74,7 @@
                 <TextBlock Grid.Row="0" FontWeight="Bold" 
                         Text="Read" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
-                <FlowDocumentScrollViewer Name="readViewer" Grid.Row="1"/>
+                <DataGrid x:Name="readTable" Grid.Row="1" ItemsSource="{Binding serial.ReadList.Messages}" AutoGenerateColumns="true" AutoGeneratingColumn="DataGrid_OnAutoGeneratingColumn" ColumnWidth="*"/>
 
             </Grid>
 

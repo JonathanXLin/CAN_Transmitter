@@ -13,10 +13,10 @@ namespace pcCANInterface
     {
         public static int NUMATTRIBUTES = 3; //update for each piece of information stored; currently id, data, and time
         public static int MESSAGESIZE = 8;
-        public static int RAWNUMBYTES = 10;
+        public static int RAWNUMBYTES = 12;
 
-        private int id;
-        public int Id
+        private UInt32 id;
+        public UInt32 Id
         {
             get => id;
             set => this.RaiseAndSetIfChanged(ref id, value);
@@ -88,49 +88,43 @@ namespace pcCANInterface
             set => this.RaiseAndSetIfChanged(ref time, value);
         }
 
-        public canMsg(int initId, byte[] initMsg, DateTime initTime)
+        public canMsg(UInt32 initId, byte newD0, byte newD1, byte newD2, byte newD3, byte newD4, byte newD5, byte newD6, byte newD7, DateTime initTime)
         {
             Id = initId;
             //TODO: update this if different size messages are given as a parameter
-            try
-            {
-                D0 = initMsg[0];
-                D1 = initMsg[1];
-                D2 = initMsg[2];
-                D3 = initMsg[3];
-                D4 = initMsg[4];
-                D5 = initMsg[5];
-                D6 = initMsg[6];
-                D7 = initMsg[7];
-            }
-            catch(Exception ex)
-            {
-                //in case there's an argument out of range
-            }
-            Time = initTime;
+       
+            D0 = newD0;
+            D1 = newD1;
+            D2 = newD2;
+            D3 = newD3;
+            D4 = newD4;
+            D5 = newD5;
+            D6 = newD6;
+            D7 = newD7;
+
         }
     }
 
-    //struct for casting struct in Arduino
-    public struct rawCANMsg
-    {
-        UInt32 id;
-        byte[] message;
+    ////struct for casting struct in Arduino
+    //public struct basicCANMsg
+    //{
+    //    UInt32 id;
+    //    byte[] message;
+    //    DateTime time;
 
-        public static implicit operator rawCANMsg(byte[] v) => new rawCANMsg(v);
+    //    public basicCANMsg(byte d0, byte d1, byte d2, byte d3, byte d4, byte d5, byte d6, byte d7)
+    //    {
+    //        message = new byte[canMsg.MESSAGESIZE];
 
-        public rawCANMsg(byte[] v)
-        {
-            message = new byte[canMsg.MESSAGESIZE];
-            int i = 0;
-            for(; i < canMsg.MESSAGESIZE; i++)
-            {
-                message[i] = v[i];
-            }
+    //        int i = 0;
+    //        for(; i < canMsg.MESSAGESIZE; i++)
+    //        {
+    //            message[i] = v[i];
+    //        }
 
-            //extract Id info
-            id = (UInt32)(v[9] << 16 + v[10]);
+    //        //extract Id info
+    //        id = (UInt32)(v[9] << 16 + v[10]);
 
-        }
-    };
+    //    }
+    //};
 }

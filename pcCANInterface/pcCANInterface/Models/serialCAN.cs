@@ -13,6 +13,8 @@ namespace pcCANInterface
     {
         public serialCAN(debug dbgStr)
         {
+            ReadList = new canReadList();
+            WriteList = new canWriteList();
             port = new SerialPort();
             selectedPort = null;
             updatePortNames(dbgStr);
@@ -21,6 +23,21 @@ namespace pcCANInterface
         private static int baud = 256000;
         public SerialPort port { get; set; }
         public static int MAXMESSAGES = 10;
+        private static double READCHECKRATE = 0.9;
+
+        private canReadList readList;
+        public canReadList ReadList
+        {
+            get => readList;
+            set => this.RaiseAndSetIfChanged(ref readList, value);
+        }
+
+        private canWriteList writeList;
+        public canWriteList WriteList
+        {
+            get => writeList;
+            set => this.RaiseAndSetIfChanged(ref writeList, value);
+        }
 
         private int readId;
         public int ReadId
@@ -85,30 +102,35 @@ namespace pcCANInterface
                 }
                 dbgStr.setMessage(debug.connectGood);
                 //start a task to check the buffer
-                Timer timer = new Timer(readMessages, dbgStr, TimeSpan.FromSeconds(0), TimeSpan.FromMilliseconds(0.1));
+                Tuple<debug,canReadList> parameters = Tuple.Create(dbgStr, ReadList);
+                Timer timer = new Timer(parseMessage, parameters, TimeSpan.FromSeconds(0), TimeSpan.FromMilliseconds(READCHECKRATE));
      
             }
             else
             {
                 Console.WriteLine(debug.badDebugParameter);
             }
-
-
         }
 
-        private void readMessages(object dbgStr)
-        {
-            var dbg = dbgStr as debug;
-            byte[] rawMsg = new byte[canMsg.RAWNUMBYTES];
-            if (dbgStr != null)
+        private void parseMessage(object parameters)
+        {     
+            if (parameters != null)
             {
+                var inputs = parameters as Tuple<debug, canReadList>;
+                var dbg = inputs.Item1;
+                var list = inputs.Item2;
+                byte[] rawMsg = new byte[canMsg.RAWNUMBYTES];
+               
                 try
                 {
                     port.Read(rawMsg, 0, canMsg.RAWNUMBYTES);
+        
+
                 }
                 catch (TimeoutException ex)
                 {
                     //this just means there was no message, it's not a problem
+                    Console.WriteLine("there was no message");
                     return;
                 }
                 catch (InvalidOperationException ex)
@@ -119,24 +141,33 @@ namespace pcCANInterface
                 //got a good message, no exceptions
                 //don't show it in the debug textbox since it's so often
                 //just show it on the read section
-                rawCANMsg msg = (rawCANMsg)rawMsg;
+                Console.WriteLine("there was a message");
+                for (int i = 0; i < 12; i++)
+                {
+                    Console.WriteLine(rawMsg[i]);
 
+                }
+
+                byte d0 = rawMsg[0];
+                byte d1 = rawMsg[1];
+                byte d2 = rawMsg[2];
+                byte d3 = rawMsg[3];
+                byte d4 = rawMsg[4];
+                byte d5 = rawMsg[5];
+                byte d6 = rawMsg[6];
+                byte d7 = rawMsg[7];
+
+                Console.WriteLine(d7);
+
+                UInt32 id = (UInt32)((rawMsg[8] << 24) + (rawMsg[9] << 16) + (rawMsg[10] << 8) + rawMsg[11]);
+                var message = new canMsg(id, d0, d1, d2, d3, d4, d5, d6, d7, DateTime.Now);
+                list.addMessage(message);
                
             }
             else
             {
                 Console.WriteLine("bad debug string");
             }
-        }
-
-        void parseCANId(string message)
-        {
-
-        }
-
-        void parseCANMsg(string message)
-        {
-
         }
     }
 

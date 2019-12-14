@@ -22,5 +22,11 @@ namespace pcCANInterface
         {
             messages = new List<canMsg>(LISTLENGTH);
         }
+
+        public void addMessage(canMsg msg)
+        {
+            //TODO: Group messages with same ID
+            Messages.Add(msg);
+        }
     }
 }

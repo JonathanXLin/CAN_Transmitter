@@ -19,13 +19,7 @@ namespace pcCANInterface.ViewModels
         public updatePortsCommand updatePorts { get; private set; }
         public connectCommand connect { get; private set; }
         private Main view;
-        public canReadList readList { get; private set; }
-        private canWriteList writeList;
-        public canWriteList WriteList
-        {
-            get => writeList;
-            set => this.RaiseAndSetIfChanged(ref writeList, value);
-        }
+
         public ViewModelMain(Main newView)
         {
             view = newView;
@@ -33,8 +27,7 @@ namespace pcCANInterface.ViewModels
             serial = new serialCAN(dbgString);
             updatePorts = new updatePortsCommand(serial.updatePortNames);
             connect = new connectCommand(serial.connect);
-            readList = new canReadList();
-            writeList = new canWriteList();
+
             //linkCANList();
         }
         
