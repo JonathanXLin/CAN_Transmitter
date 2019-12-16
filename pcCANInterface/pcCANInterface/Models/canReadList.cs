@@ -8,6 +8,6 @@ namespace pcCANInterface
 {
     public class canReadList : canList
     {
-        public canReadList() : base() { }
+        public canReadList() : base() {  }
     }
 }

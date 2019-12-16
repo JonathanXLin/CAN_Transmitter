@@ -13,7 +13,8 @@ namespace pcCANInterface
     {
         public static int NUMATTRIBUTES = 3; //update for each piece of information stored; currently id, data, and time
         public static int MESSAGESIZE = 8;
-        public static int RAWNUMBYTES = 12;
+        public static int RAWNUMBYTES = 18; // this value should theoretically be 12 not 18: 8 bytes for data and 4 bytes for id packed into the communication array
+        //TODO: however, for some reason there is 6 bytes of packing on the end of the Arduino serial message, don't know why it's there, this consistent error is solved by reading all 18 bytes and ignoring the last 6
 
         private UInt32 id;
         public UInt32 Id
@@ -104,27 +105,4 @@ namespace pcCANInterface
 
         }
     }
-
-    ////struct for casting struct in Arduino
-    //public struct basicCANMsg
-    //{
-    //    UInt32 id;
-    //    byte[] message;
-    //    DateTime time;
-
-    //    public basicCANMsg(byte d0, byte d1, byte d2, byte d3, byte d4, byte d5, byte d6, byte d7)
-    //    {
-    //        message = new byte[canMsg.MESSAGESIZE];
-
-    //        int i = 0;
-    //        for(; i < canMsg.MESSAGESIZE; i++)
-    //        {
-    //            message[i] = v[i];
-    //        }
-
-    //        //extract Id info
-    //        id = (UInt32)(v[9] << 16 + v[10]);
-
-    //    }
-    //};
 }

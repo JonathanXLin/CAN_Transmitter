@@ -11,19 +11,31 @@ namespace pcCANInterface
 {
     public class serialCAN : ReactiveObject
     {
+        private debug dbg;
         public serialCAN(debug dbgStr)
         {
             ReadList = new canReadList();
             WriteList = new canWriteList();
             port = new SerialPort();
+            port.StopBits = StopBits.One;
+            port.Parity = Parity.None;
+            port.DataBits = 8;
+            dbg = dbgStr;
+            port.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
             selectedPort = null;
-            updatePortNames(dbgStr);
+            updatePortNames(dbg);
+        }
+
+        private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
+        {
+            if (e.EventType == SerialData.Eof)
+                return; //ignore the fake 'end of frame' message
+            parseMessage(ReadList, dbg);
         }
 
         private static int baud = 256000;
         public SerialPort port { get; set; }
         public static int MAXMESSAGES = 10;
-        private static double READCHECKRATE = 0.9;
 
         private canReadList readList;
         public canReadList ReadList
@@ -102,9 +114,6 @@ namespace pcCANInterface
                 }
                 dbgStr.setMessage(debug.connectGood);
                 //start a task to check the buffer
-                Tuple<debug,canReadList> parameters = Tuple.Create(dbgStr, ReadList);
-                Timer timer = new Timer(parseMessage, parameters, TimeSpan.FromSeconds(0), TimeSpan.FromMilliseconds(READCHECKRATE));
-     
             }
             else
             {
@@ -112,62 +121,53 @@ namespace pcCANInterface
             }
         }
 
-        private void parseMessage(object parameters)
-        {     
-            if (parameters != null)
+        private void parseMessage(canList list, debug dbg)
+        {
+            byte[] rawMsg = new byte[canMsg.RAWNUMBYTES];
+
+
+            try
             {
-                var inputs = parameters as Tuple<debug, canReadList>;
-                var dbg = inputs.Item1;
-                var list = inputs.Item2;
-                byte[] rawMsg = new byte[canMsg.RAWNUMBYTES];
+                port.Read(rawMsg, 0, canMsg.RAWNUMBYTES);
                
-                try
-                {
-                    port.Read(rawMsg, 0, canMsg.RAWNUMBYTES);
-        
 
-                }
-                catch (TimeoutException ex)
-                {
-                    //this just means there was no message, it's not a problem
-                    Console.WriteLine("there was no message");
-                    return;
-                }
-                catch (InvalidOperationException ex)
-                {
-                    dbg.setMessage(debug.triedToReadClosedPort);
-                    return;
-                }
-                //got a good message, no exceptions
-                //don't show it in the debug textbox since it's so often
-                //just show it on the read section
-                Console.WriteLine("there was a message");
-                for (int i = 0; i < 12; i++)
-                {
-                    Console.WriteLine(rawMsg[i]);
-
-                }
-
-                byte d0 = rawMsg[0];
-                byte d1 = rawMsg[1];
-                byte d2 = rawMsg[2];
-                byte d3 = rawMsg[3];
-                byte d4 = rawMsg[4];
-                byte d5 = rawMsg[5];
-                byte d6 = rawMsg[6];
-                byte d7 = rawMsg[7];
-
-                Console.WriteLine(d7);
-
-                UInt32 id = (UInt32)((rawMsg[8] << 24) + (rawMsg[9] << 16) + (rawMsg[10] << 8) + rawMsg[11]);
-                var message = new canMsg(id, d0, d1, d2, d3, d4, d5, d6, d7, DateTime.Now);
-                list.addMessage(message);
-               
             }
-            else
+            catch (TimeoutException ex)
             {
-                Console.WriteLine("bad debug string");
+                //this just means there was no message, it's not a problem
+                Console.WriteLine("there was no message");
+                return;
             }
+            catch (InvalidOperationException ex)
+            {
+                dbg.setMessage(debug.triedToReadClosedPort);
+                return;
+            }
+            //got a good message, no exceptions
+            //don't show it in the debug textbox since it's so often
+            //just show it on the read section
+            //Console.WriteLine("starting msg");
+            //for (int i = 0; i < 12; i++)
+            //{
+            //    Console.WriteLine(rawMsg[i]);
+            //}
+
+            byte d0 = rawMsg[0];
+            byte d1 = rawMsg[1];
+            byte d2 = rawMsg[2];
+            byte d3 = rawMsg[3];
+            byte d4 = rawMsg[4];
+            byte d5 = rawMsg[5];
+            byte d6 = rawMsg[6];
+            byte d7 = rawMsg[7];
+            //Console.WriteLine("ending msg");
+
+            UInt32 id = (UInt32)((rawMsg[8] << 24) + (rawMsg[9] << 16) + (rawMsg[10] << 8) + rawMsg[11]);
+            //Console.WriteLine(id);
+            Console.WriteLine(DateTime.Now);
+            var message = new canMsg(id, d0, d1, d2, d3, d4, d5, d6, d7, DateTime.Now);
+            list.addMessage(message, dbg);
+               
         }
     }
 

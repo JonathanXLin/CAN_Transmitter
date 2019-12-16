@@ -28,6 +28,7 @@ namespace pcCANInterface
 
         public static string badDebugParameter = "bad debug parameter";
         public static string triedToReadClosedPort = "tried to read from closed port";
+        public static string tooManyMessages = "Exceeded 32 unique messages. Update code to view more";
 
         public void setMessage(string newMessage)
         {

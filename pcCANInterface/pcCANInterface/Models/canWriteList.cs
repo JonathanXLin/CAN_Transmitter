@@ -8,7 +8,7 @@ namespace pcCANInterface
 {
     public class canWriteList : canList
     {
-        public canWriteList() : base() { this.Messages.Add(new canMsg(5, 5,5,5,5,5,5,5,5, DateTime.Now)); }
+        public canWriteList() : base() {  }
 
     }
 }
