@@ -1,4 +1,5 @@
 #include "can_cyclic.hpp"
+#include "mcp_can.h"
 
 MCP_CAN myCan(9);     // Set CS to pin 9
 
@@ -166,6 +167,7 @@ void MCP2515_ISR(){
     flagRecv = 1;
 }
 
+//send a message in recognized format to companion app
 void print_can_receive(){
   if(flagRecv) 
   {                                   // check if get data
@@ -180,16 +182,23 @@ void print_can_receive(){
     {
       // read data,  len: data length, buf: data buf
       myCan.readMsgBufID(&id, &len, buf);
-
-      Serial.print(id);
-      Serial.print(",");
-      
-      for(int i = 0; i<len; i++)
-      {
-        Serial.print(buf[i]);
-        Serial.print(",");
-      }
-      Serial.println();
+      serial_to_app(id, buf);
     }
   }
+}
+
+//pack a can message into a buffer array and send it over serial to be displayed in the app
+void serial_to_app(unsigned long id, unsigned char buf[num_bytes_data])
+{
+  byte serialMessage[num_bytes_serial]; //bytes to be sent to app
+  for(int i = 0; i < num_bytes_data; i++)
+  {
+    serialMessage[i] = buf[i];
+  }
+  // pack the 29-bit id into 4 bytes
+  serialMessage[8] = (id & 0xff000000) >> 24;
+  serialMessage[9] = (id & 0x00ff0000) >> 16;
+  serialMessage[10] = (id & 0x0000ff00) >> 8;
+  serialMessage[11] = (id & 0x000000ff) >> 0;
+  Serial.write(serialMessage, num_bytes_serial);
 }

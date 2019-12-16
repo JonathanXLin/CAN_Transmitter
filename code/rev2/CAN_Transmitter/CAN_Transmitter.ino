@@ -22,4 +22,5 @@ void loop(){
   EBC2.send_CAN();
 
   print_can_receive();
+  
 }

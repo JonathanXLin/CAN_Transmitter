@@ -1,3 +1,6 @@
+#ifndef CAN_CYCLIC_HPP
+#define CAN_CYCLIC_HPP
+
 #include "mcp_can.h"
 #include <SPI.h>
 #include <SD.h>
@@ -6,6 +9,9 @@
 #define led_tx    6
 
 #define pin_baud_select   8
+
+#define num_bytes_serial 12 //the number of bytes to send the 32 bit id and 8 bytes of message
+#define num_bytes_data 8 //number of bytes in the data frame
 
 /*SAMD core*/
 #ifdef ARDUINO_SAMD_VARIANT_COMPLIANCE
@@ -37,3 +43,7 @@ void CAN_initialize();
 void print_can_receive();
 
 void MCP2515_ISR();
+
+void serial_to_app(unsigned long id, unsigned char buf[num_bytes_data]);
+
+#endif
