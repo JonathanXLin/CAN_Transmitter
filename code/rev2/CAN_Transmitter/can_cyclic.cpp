@@ -2,10 +2,14 @@
 
 MCP_CAN myCan(9);     // Set CS to pin 9
 
+File log_file;
+
 unsigned char flagRecv = 0;
 unsigned char len = 0;
 unsigned char buf[8];
 char str[20];
+
+unsigned long message_count = 0; // Incremented every time message is sent/received
 
 void CAN_initialize(){
   pinMode(led_pwr, OUTPUT);
@@ -172,6 +176,8 @@ void print_can_receive(){
     flagRecv = 0;                   // clear flag
     unsigned long id = 0;
 
+    log_file = SD.open("can.csv", FILE_WRITE);
+
     // iterate over all pending messages
     // If either the bus is saturated or the MCU is busy,
     // both RX buffers may be in use and reading a single
@@ -181,15 +187,51 @@ void print_can_receive(){
       // read data,  len: data length, buf: data buf
       myCan.readMsgBufID(&id, &len, buf);
 
-      Serial.print(id);
-      Serial.print(",");
+      Serial.print(((double)(millis()))/1000); // Timestamp
+      Serial.print(" ");
+      Serial.print("1"); // Channel, always 1
+      Serial.print("  ");
+      Serial.print(id); // ID in decimal
+      Serial.print("x");
+      Serial.print("  ");
+      Serial.print("Rx"); // Rx if receiving
+      Serial.print("            ");
+      Serial.print(len);
+      Serial.print("  ");
       
       for(int i = 0; i<len; i++)
       {
         Serial.print(buf[i]);
-        Serial.print(",");
+        Serial.print(" ");
       }
+      Serial.print("            ");
+      Serial.print(message_count);
       Serial.println();
+
+      log_file.print(((double)(millis()))/1000); // Timestamp
+      log_file.print(" ");
+      log_file.print("1"); // Channel, always 1
+      log_file.print("  ");
+      log_file.print(id); // ID in decimal
+      log_file.print("x");
+      log_file.print("  ");
+      log_file.print("Rx"); // Rx if receiving
+      log_file.print("            ");
+      log_file.print(len);
+      log_file.print("  ");
+      
+      for(int i = 0; i<len; i++)
+      {
+        log_file.print(buf[i]);
+        log_file.print(" ");
+      }
+      log_file.print("            ");
+      log_file.print(message_count);
+      log_file.println();
+
+      message_count++;
     }
+
+    log_file.close();
   }
 }

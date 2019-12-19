@@ -2,17 +2,10 @@
 #include <SPI.h>
 #include <SD.h>
 
-#define led_pwr   5
+#define led_pwr   7
 #define led_tx    6
 
 #define pin_baud_select   8
-
-/*SAMD core*/
-#ifdef ARDUINO_SAMD_VARIANT_COMPLIANCE
-  #define SERIAL SerialUSB
-#else
-  #define SERIAL Serial
-#endif
 
 enum CAN_id_length {CAN_ID_11_BIT, CAN_ID_29_BIT};
 
