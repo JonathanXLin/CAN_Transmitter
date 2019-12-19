@@ -1,4 +1,11 @@
-# CAN_Transmitter rev0
+# CAN_Transmitter
+
+<br>
+<p align="center"> 
+  <img src="can_transmitter.jpg" width="400">
+</p>
+<br>
+
 Please read the User Guide for more information.
 
 This CAN transmitter sends cyclic CAN messages for automotive products undergoing long duration testing. This is intended to be easy to create, program, and configure. The following are user configurable:
@@ -9,10 +16,6 @@ This CAN transmitter sends cyclic CAN messages for automotive products undergoin
   <br>&nbsp;&nbsp;&nbsp;o	CAN message DLCs
   <br>&nbsp;&nbsp;&nbsp;o	CAN message data
   <br>&nbsp;&nbsp;&nbsp;o	CAN message period
+<br><br>
   
-<br>Planned updates:
-<br>•	Protective off-the-shelf enclosure
-<br>•	New Seeeduino CAN shield with data logging (Micro SD)
-
-<br>This project is and requires software licensed under the MIT License, which permits commercial use, modification, and distribution. Additional details are provided in the user guide.
-
+In addition, rev2 code adds the capability of data logging. Incoming CAN frames are stored in a plain ASCII file (.txt). Due to hardware limitations, if the incoming message frequency exceeds 30Hz, bad things will happen (CAN buffer overflow and log file becomes inaccurate, IRQ handler hogs processor time and transmit messages don't get transmitted).
